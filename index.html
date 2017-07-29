@@ -4,491 +4,2200 @@
 <!--[if !IE]><!--> <html> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <title>Documentation | Venedor Responsive eCommerce Template</title>
+        <title>Venedor - Responsive eCommerce Template</title>
         <meta name="description" content="Responsive modern ecommerce Html5 Template">
         <!--[if IE]> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <![endif]-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|Oswald:400,700,300' rel='stylesheet' id="googlefont">
+        <link href='//fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic%7CPT+Gudea:400,700,400italic%7CPT+Oswald:400,700,300' rel='stylesheet' id="googlefont">
         
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/prettyPhoto.css">
+        <link rel="stylesheet" href="css/jquery.bxslider.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
         
         <!-- Favicon and Apple Icons -->
-        <link rel="shortcut icon" href="images/icons/icon.png">
-        <link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png" />
-        <!-- Retina iPhone --> 
-        <link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-icon-114x114.png" />
-        <link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-icon-72x72.png" />
-        <!-- Retina iPad --> 
-        <link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-icon-144x144.png" />
+        <link rel="icon" type="image/png" href="images/icons/icon.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-icon-72x72.png">
         
         <!--- jQuery -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
-		<!--[if lt IE 9]>
-			<script src="js/html5shiv.js"></script>
-			<script src="js/respond.min.js"></script>
-		<![endif]-->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.js"></script>
+            <script src="js/respond.min.js"></script>
+        <![endif]-->
+        
+        <style id="custom-style">
+        
+        </style>
     </head>
-
     <body>
-        <header id="header">
-            <div id="header-inner">
-                <h1 id="logo-container">
-                    <a id="logo" href="#" title="Venedor - Responsive eCommerce Template"><img src="images/logo.png" alt="Venedor - Responsive eCommerce Template" width="184" height="61"></a>
-                </h1>
-                <div class="xlg-margin"></div>
-                <ul id="menu">
-                    <li><a href="#home">Getting Started</a></li>
-                    <li><a href="#" class="open">Html Codes </a><span class="open-menu">&plus;</span>
-                        <ul><li><a href="#general-html">General</a></li></ul>
-                    </li>
-                    <li><a href="#" class="open">Css (Style) Codes </a><span class="open-menu">&plus;</span>
-                        <ul>
-                            <li><a href="#general-css">General</a></li>
-                            <li><a href="#diff-css">Difference of Versions</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#" class="open">Javascript (jQuery) </a><span class="open-menu">&plus;</span>
-                        <ul>
-                            <li><a href="#general-js">General </a></li>
-                            <li><a href="#google-map">Google Map</a></li>
-                            <li><a href="#twitter-feed">Twitter feed</a></li>
-                            <li><a href="#flickr-feed">Flicker feed</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#credits">Credits</a></li>
-                    <li><a href="#updates">Updates</a></li>
-                    <li><a href="#faqs">FaQs</a></li>
-                </ul>
-            </div>
+    <div id="wrapper">
+        <header id="header" class="header3">
+            <div id="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="header-top-left">
+                                <ul id="top-links" class="clearfix">
+                                    <li><a href="#" title="My Wishlist"><span class="top-icon top-icon-pencil"></span><span class="hide-for-xs">My Wishlist</span></a></li>
+                                    <li><a href="#" title="My Account"><span class="top-icon top-icon-user"></span><span class="hide-for-xs">My Account</span></a></li>
+                                    <li><a href="cart.html" title="My Cart"><span class="top-icon top-icon-cart"></span><span class="hide-for-xs">My Cart</span></a></li>
+                                    <li><a href="checkout.html" title="Checkout"><span class="top-icon top-icon-check"></span><span class="hide-for-xs">Checkout</span></a></li>
+                                </ul>
+                            </div><!-- End .header-top-left -->
+                            <div class="header-top-right">
+                                <div class="header-text-container pull-right">
+                                    <p class="header-text">Welcome to Venedor!</p>
+                                    <p class="header-link"><a href="#">login</a>&nbsp;or&nbsp;<a href="#">create an account</a></p>
+                                </div><!-- End .pull-right -->
+                            </div><!-- End .header-top-right -->
+                        </div><!-- End .col-md-12 -->
+                    </div><!-- End .row -->
+                </div><!-- End .container -->
+            </div><!-- End #header-top -->
+            
+            <div id="inner-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-5 col-xs-12 logo-container">
+                            <h1 class="logo clearfix">
+                                <span>Responsive eCommerce Template</span>
+                                <a href="index.html" title="Venedor eCommerce Template"><img src="images/logo3.png" alt="Venedor Commerce Template" width="196" height="42"></a>
+                            </h1>
+                        </div><!-- End .col-md-5 -->
+                        <div class="col-md-7 col-sm-7 col-xs-12 header-inner-right">
+                                
+                            <div class="header-inner-right-wrapper clearfix">
+                                <div class="dropdown-cart-menu-container pull-right">
+                                    <div class="btn-group dropdown-cart">
+                                        <button type="button" class="btn btn-custom dropdown-toggle" data-toggle="dropdown">
+                                            <span class="cart-menu-icon"></span>
+                                            0 item(s) <span class="drop-price">- $0.00</span>
+                                        </button>
+                                        
+                                            <div class="dropdown-menu dropdown-cart-menu pull-right clearfix" role="menu">
+                                                <p class="dropdown-cart-description">Recently added item(s).</p>
+                                                <ul class="dropdown-cart-product-list">
+                                                    <li class="item clearfix">
+                                                    <a href="#" title="Delete item" class="delete-item"><i class="fa fa-times"></i></a>
+                                                    <a href="#" title="Edit item" class="edit-item"><i class="fa fa-pencil"></i></a>
+                                                        <figure>
+                                                            <a href="product.html"><img src="images/products/thumbnails/item12.jpg" alt="phone 4"></a>
+                                                        </figure>
+                                                        <div class="dropdown-cart-details">
+                                                            <p class="item-name">
+                                                            <a href="product.html">Cam Optia AF Webcam </a>
+                                                            </p>
+                                                            <p>
+                                                                1x
+                                                                <span class="item-price">$499</span>
+                                                            </p>
+                                                        </div><!-- End .dropdown-cart-details -->
+                                                    </li>
+                                                    <li class="item clearfix">
+                                                    <a href="#" title="Delete item" class="delete-item"><i class="fa fa-times"></i></a>
+                                                    <a href="#" title="Edit item" class="edit-item"><i class="fa fa-pencil"></i></a>
+                                                        <figure>
+                                                            <a href="product.html"><img src="images/products/thumbnails/item13.jpg" alt="phone 2"></a>
+                                                        </figure>
+                                                        <div class="dropdown-cart-details">
+                                                            <p class="item-name">
+                                                                <a href="product.html">Iphone Case Cover Original</a>
+                                                            </p>
+                                                            <p>
+                                                                1x
+                                                                <span class="item-price">$499<span class="sub-price">.99</span></span>
+                                                            </p>
+                                                        </div><!-- End .dropdown-cart-details -->
+                                                    </li>
+                                                </ul>
+                                                
+                                                <ul class="dropdown-cart-total">
+                                                    <li><span class="dropdown-cart-total-title">Shipping:</span>$7</li>
+                                                    <li><span class="dropdown-cart-total-title">Total:</span>$1005<span class="sub-price">.99</span></li>
+                                                </ul><!-- .dropdown-cart-total -->
+                                                <div class="dropdown-cart-action">
+                                                    <p><a href="cart.html" class="btn btn-custom-2 btn-block">Cart</a></p>
+                                                    <p><a href="checkout.html" class="btn btn-custom btn-block">Checkout</a></p>
+                                                </div><!-- End .dropdown-cart-action -->
+                                                
+                                            </div><!-- End .dropdown-cart -->
+                                        </div><!-- End .btn-group -->
+                                    </div><!-- End .dropdown-cart-menu-container -->
 
-            <div id="header-bottom-text">
-                <p>All rights reserved! &copy; <br><a href="//themeforest.net/user/SW-THEMES" target="_blank">SW-THEMES</a></p>
-            </div>
-        </header>
+                                <div class="header-top-dropdowns pull-right">
+                                    <div class="btn-group dropdown-money">
+                                        <button type="button" class="btn btn-custom dropdown-toggle" data-toggle="dropdown">
+                                            <span class="hide-for-xs">US Dollar</span><span class="hide-for-lg">$</span>
+                                        </button>
+                                        <ul class="dropdown-menu pull-right" role="menu">
+                                            <li><a href="#"><span class="hide-for-xs">Euro</span><span class="hide-for-lg">&euro;</span></a></li>
+                                            <li><a href="#"><span class="hide-for-xs">Pound</span><span class="hide-for-lg">&pound;</span></a></li>
+                                        </ul>
+                                    </div><!-- End .btn-group -->
+                                    <div class="btn-group dropdown-language">
+                                        <button type="button" class="btn btn-custom dropdown-toggle" data-toggle="dropdown">
+                                            <span class="flag-container"><img src="images/england-flag.png" alt="flag of england"></span>
+                                            <span class="hide-for-xs">English</span>
+                                        </button>
+                                        <ul class="dropdown-menu pull-right" role="menu">
+                                            <li><a href="#"><span class="flag-container"><img src="images/italy-flag.png" alt="flag of england"></span><span class="hide-for-xs">Italian</span></a></li>
+                                            <li><a href="#"><span class="flag-container"><img src="images/spain-flag.png" alt="flag of italy"></span><span class="hide-for-xs">Spanish</span></a></li>
+                                            <li><a href="#"><span class="flag-container"><img src="images/france-flag.png" alt="flag of france"></span><span class="hide-for-xs">French</span></a></li>
+                                            <li><a href="#"><span class="sm-separator"><img src="images/germany-flag.png" alt="flag of germany"></span><span class="hide-for-xs">German</span></a></li>
+                                        </ul>
+                                    </div><!-- End .btn-group -->
+                                </div><!-- End .header-top-dropdowns -->
+                            </div><!-- End .header-inner-right-wrapper -->
+                            
+                            <p class="quick-contact-text">SUPPORT SERVICE: +(404) 851-21-48-15; +(404) 158-14-25-78</p>
+                        </div><!-- End .col-md-7 -->
+                    </div><!-- End .row -->
+                </div><!-- End .container -->
+                
+                <div id="main-nav-container">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 clearfix">
+                                
+                                <nav id="main-nav">
+                                    <div id="responsive-nav">
+                                        <div id="responsive-nav-button">
+                                            Menu <span id="responsive-nav-button-icon"></span>
+                                        </div><!-- responsive-nav-button -->
+                                    </div>
+                                    <ul class="menu clearfix">
+                                        <li>
+                                            <a class="active" href="index.html">
+                                                <span class="hide-for-xs"><img src="images/home-icon.png" alt="home icon"></span>
+                                                <span class="hide-for-lg">
+                                                    Home
+                                                </span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="../green/index.html">Home 1</a></li>
+                                                <li><a href="../blue/index.html">Home 2</a></li>
+                                                <li><a href="../orange/index.html">Home 3</a></li>
+                                                <li><a href="../pink/index.html">Home 4</a></li>
+                                                <li><a href="../brown/index.html">Home 5</a></li>
+                                                <li><a href="../green2/index.html">Home 6</a></li>
+                                                <li><a href="../blueorange/index.html">Home 7</a></li>
+                                                <li><a href="../blueorange2/index.html">Home 8</a></li>
+                                                <li><a href="../browngreen/index.html">Home 9</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="mega-menu-container"><a href="#">SHOP</a>
+                                            <div class="mega-menu clearfix">
+                                                    <div class="col-5">
+                                                        <a href="category.html" class="mega-menu-title">Clothing</a><!-- End .mega-menu-title -->
+                                                        <ul class="mega-menu-list clearfix">
+                                                            <li><a href="#">Dresses</a></li>
+                                                            <li><a href="#">Jeans &amp; Trousers</a></li>
+                                                            <li><a href="#">Blouses &amp; Shirts</a></li>
+                                                            <li><a href="#">Tops &amp; T-Shirts</a></li>
+                                                            <li><a href="#">Jackets &amp; Coats</a></li>
+                                                            <li><a href="#">Skirts</a></li>
+                                                        </ul>
+                                                    </div><!-- End .col-5 -->
+                                                    <div class="col-5">
+                                                        <a href="category.html" class="mega-menu-title">Shoes</a><!-- End .mega-menu-title -->
+                                                        <ul class="mega-menu-list clearfix">
+                                                            <li><a href="#">Formal Shoes</a></li>
+                                                            <li><a href="#">Casual Shoes</a></li>
+                                                            <li><a href="#">Sandals</a></li>
+                                                            <li><a href="#">Boots</a></li>
+                                                            <li><a href="#">Wide Fit</a></li>
+                                                            <li><a href="#">Slippers</a></li>
+                                                        </ul>
+                                                    </div><!-- End .col-5 -->
+                                                    <div class="col-5">
+                                                        <a href="category.html" class="mega-menu-title">Accessories</a><!-- End .mega-menu-title -->
+                                                        <ul class="mega-menu-list clearfix">
+                                                            <li><a href="#">Bags &amp; Purses</a></li>
+                                                            <li><a href="#">Belts</a></li>
+                                                            <li><a href="#">Gloves</a></li>
+                                                            <li><a href="#">Jewellery</a></li>
+                                                            <li><a href="#">Sunglasses</a></li>
+                                                            <li><a href="#">Hair Accessories</a></li>
+                                                        </ul>
+                                                    </div><!-- End .col-5 -->
+                                                    <div class="col-5">
+                                                        <a href="category.html" class="mega-menu-title">Sports</a><!-- End .mega-menu-title -->
+                                                        <ul class="mega-menu-list clearfix">
+                                                            <li><a href="#">Sport Tops &amp; Vests</a></li>
+                                                            <li><a href="#">Swimwear</a></li>
+                                                            <li><a href="#">Footwear</a></li>
+                                                            <li><a href="#">Sports Underwear</a></li>
+                                                            <li><a href="#">Bags</a></li>
+                                                        </ul>
+                                                    </div><!-- End .col-5 -->
+                                                    
+                                                    <div class="col-5">
+                                                        <a href="category.html" class="mega-menu-title">Maternity</a><!-- End .mega-menu-title -->
+                                                        <ul class="mega-menu-list clearfix">
+                                                            <li><a href="#">Tops &amp; Skirts</a></li>
+                                                            <li><a href="#">Dresses</a></li>
+                                                            <li><a href="#">Trousers &amp; Shorts</a></li>
+                                                            <li><a href="#">Knitwear</a></li>
+                                                            <li><a href="#">Jackets &amp; Coats</a></li>
+                                                        </ul>
+                                                    </div><!-- End .col-5 -->
+                                            </div><!-- End .mega-menu -->
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="#">PAGES</a>
+                                            <ul>
+                                                <li><a href="#">Headers</a>
+                                                    <ul>
+                                                        <li><a href="header1.html">Header Version 1</a></li>
+                                                        <li><a href="header2.html">Header Version 2</a></li>
+                                                        <li><a href="header3.html">Header Version 3</a></li>
+                                                        <li><a href="header4.html">Header Version 4</a></li>
+                                                        <li><a href="header5.html">Header Version 5</a></li>
+                                                        <li><a href="header6.html">Header Version 6</a></li>
+                                                        <li><a href="header7.html">Header Version 7</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Footers</a>
+                                                    <ul>
+                                                        <li><a href="footer1.html">Footer Version 1</a></li>
+                                                        <li><a href="footer2.html">Footer Version 2</a></li>
+                                                        <li><a href="footer3.html">Footer Version 3</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="product.html">Product</a></li>
+                                                <li><a href="cart.html">Cart</a></li>
+                                                <li><a href="category.html">Category</a>
+                                                    <ul>
+                                                        <li><a href="category-list.html">Category list</a></li>
+                                                        <li><a href="category.html">Category Banner 1</a></li>
+                                                        <li><a href="category-banner-2.html">Category Banner 2</a></li>
+                                                        <li><a href="category-banner-3.html">Category Banner 3</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="blog.html">Blog</a>
+                                                    <ul>
+                                                        <li><a href="blog.html">Right Sidebar</a></li>
+                                                        <li><a href="blog-sidebar-left.html">Left Sidebar</a></li>
+                                                        <li><a href="blog-sidebar-both.html">Both Sidebar</a></li>
+                                                        <li><a href="single.html">Blog Post</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="checkout.html">Checkout</a></li>
+                                                <li><a href="aboutus.html">About Us</a></li>
+                                                <li><a href="register-account.html">Register Account</a></li>
+                                                <li><a href="compare-products.html">Compare Products</a></li>
+                                                <li><a href="login.html">Login</a></li>
+                                                <li><a href="404.html">404 Page</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Portfolio</a>
+                                            <ul>
+                                                <li><a href="#">Classic</a>
+                                                    <ul>
+                                                        <li><a href="portfolio-2.html">Two Columns</a></li>
+                                                        <li><a href="portfolio-3.html">Three Columns</a></li>
+                                                        <li><a href="portfolio-4.html">Four Columns</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Masonry</a>
+                                                    <ul>
+                                                        <li><a href="portfolio-masonry-2.html">Two Columns</a></li>
+                                                        <li><a href="portfolio-masonry-3.html">Three Columns</a></li>
+                                                        <li><a href="portfolio-masonry-4.html">Four Columns</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Portfolio Posts</a>
+                                                    <ul>
+                                                        <li><a href="single-portfolio.html">Image Post</a></li>
+                                                        <li><a href="single-portfolio-gallery.html">Gallery Post</a></li>
+                                                        <li><a href="single-portfolio-video.html">Video Post</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Elements</a>
+                                            <ul>
+                                                <li><a href="elements/tabs.html">Tabs</a></li>
+                                                <li><a href="elements/titles.html">Titles</a></li>
+                                                <li><a href="elements/typography.html">Typography</a></li>
+                                                <li><a href="elements/collapses.html">collapses</a></li>
+                                                <li><a href="elements/animations.html">animations</a></li>
+                                                <li><a href="elements/grids.html">Grid System</a></li>
+                                                <li><a href="elements/alerts.html">Alert Boxes</a></li>
+                                                <li><a href="elements/buttons.html">Buttons</a></li>
+                                                <li><a href="elements/medias.html">Media</a></li>
+                                                <li><a href="elements/forms.html">Forms</a></li>
+                                                <li><a href="elements/icons.html">Icons</a></li>
+                                                <li><a href="elements/lists.html">Lists</a></li>
+                                                <li><a href="elements/more.html">More</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                    </ul>
+                                    
+                                </nav>
+                                
+                                <div id="quick-access">
+                                    <form class="form-inline quick-search-form" role="form" action="#">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Search here">
+                                        </div><!-- End .form-inline -->
+                                        <button type="submit" id="quick-search" class="btn btn-custom"></button>
+                                    </form>
+                                </div><!-- End #quick-access -->
+                            </div><!-- End .col-md-12 -->
+                    </div><!-- End .row -->
+                </div><!-- End .container -->
+                    
+                </div><!-- End #nav -->
+            </div><!-- End #inner-header -->
+        </header><!-- End #header -->
 
         <section id="content">
-            <div class="container clearfix">
-                <div class="one-full">
-                <h2 class="title">Venedor - Responsive eCommerce Template <br>Documentation</h2>
-                <hr class="big">
-                <div id="home">
-                    <h2 class="sub-title">1 - Getting Started</h2>
-                <p>Thank you for purchasing Venedor Template. If you have any questions that are beyond the scope of this documentation file, please feel free to contact me via my user page contact form <a href="//www.themeforest.com/user/SW-THEMES" target="_blank">here</a>.</p>
-                <p>This is Venedor's documentation file. Please read this file carefully before contacting with us for support.</p>
-                <div class="lg-margin"></div>
-                <h3 class="sub-title">1.1 - Inclueded Files</h3>
-                <p>After downloading Venedor template and un-zip it, you will find the following files.</p>
-                <ol class="include-list">
-                    <li><img src="images/folder.png" alt="folder">Venedor
-                        <ol>
-                            <li><img src="images/folder.png" alt="folder">Green</li>
-                            <li><img src="images/folder.png" alt="folder">Blue</li>
-                            <li><img src="images/folder.png" alt="folder">Orange</li>
-                            <li><img src="images/folder.png" alt="folder">Pink</li>
-							<li><img src="images/folder.png" alt="folder">Brown</li>
-                            <li><img src="images/folder.png" alt="folder">Green2</li>
-                            <li><img src="images/folder.png" alt="folder">Blueorange</li>
-                            <li><img src="images/folder.png" alt="folder">Blueorange2</li>
-                            <li><img src="images/folder.png" alt="folder">Browngreen</li>
-                        </ol>
-                    </li>   
-                    <li><img src="images/folder.png" alt="folder">Documentation</li>
-					<li><img src="images/folder.png" alt="folder">Psds
-                        <ol><img src="images/folder.png" alt="folder">Sprites</ol>
-                    </li>
-					<li><img src="images/folder.png" alt="folder">Revolution slider documentation</li>
-                </ol>
-                <div class="lg-margin"></div>
-                <h3 class="sub-title">1.2 - Venedor Versions</h3>
-                <p>Wit the latest update Venedor Template comes with 10 versions. Green version, Blue version, Orange version, Pink Version and etc... Their differences are color-schemes, product layouts and home varients.</p>
-                <p></p>
+        	
+        	<div id="slider-edge">
+                <div class="left-side-shadow"></div><!-- End .left-side-shadow -->
+                <div class="right-side-shadow"></div><!-- End .left-side-shadow -->
+                <div id="bxslider" class="container">
+                    <ul class="bxslider">
+                        <li>
+                            <div class="slider-item">
+                                <img src="images/homeslider/slide1_1.jpg" alt="Slider item 1">
+                                <div class="slider-item-details">
+                                    <div class="slider-item-wrapper">
+                                        <h3 class="item-name">
+                                            <a href="product.html">Jacket Suiting Blazer</a>
+                                        </h3>
+                                        <div class="item-price-container">
+                                            <span class="item-price">$49.<span class="sub-price">99</span></span>
+                                        </div><!-- End .item-price-container -->
+                                        <p>Integer eleifend molestie erat in consectetur. Donec eget tellus metus, eu malesuada libero. 
+    Suspendisse leo tortor, semper et mattis ac, fermentum ac libero. Nullam eget sapien eget ligula eleifend luctus.</p>
 
-                <div class="lg-margin"></div>
-                <h3 class="sub-title">1.3 - Support</h3>
-                <p>If you have a problem or found a bug or want to ask something about template, please feel free to contact me from my <a href="mailto:#">email</a> address.</p>
-                </div>
-                <hr class="sections">
-                <div id="general-html">
-                    <h2 class="sub-title">2 - Html</h2>
-                    <p>All versions have 50 Html Files. This files coded with Html5 new features/tags. All html files are well coded with the Html new tags (like header,footer, nav etc..) and tested with Markup Validation Service. They are all valid. And to help you understand better all close tags marked with the html comments like below.</p>
-<pre><code>&lt;section id="content"&gt;
-    &lt;p&gt;This is content&lt;p/&gt;
-&lt;/section&gt;&lt;!-- End #content -->&gt;
-</code></pre>
-<div class="md-margin"></div>
-    <p>All Venedor Html files have 3 main sections. header, section#content and footer...  Header section contains logo, navigation menu, some top informations etc..  section#content contains main content. Main content changes for all html pages.  Footer section contains twitter feed, Footer widgets, Copyright text etc...</p>
-    <hr>
-    <p>With the update 1.4, We included 13 element html pages to help you to use elements better and faster. And We included 7 Header Varients and 3 Footer Varients for each version.</p>
-                </div>
-                <hr class="sections">
-                <div id="css">
+                                    <a href="#" class="item-add-btn">
+                                        Add to Cart
+                                    </a>
+                                    </div><!-- End .slider-item-wrapper -->
+                                    
+                                </div><!-- End .slider-item-details -->
+                            </div><!-- End .slider-item -->
+                            <div class="slider-item">
+                                <img src="images/homeslider/slide2_1.jpg" alt="Slider item 2">
+                                <div class="slider-item-details">
+                                    <div class="slider-item-wrapper">
+                                        <h3 class="item-name">
+                                            <a href="product.html">Jacket Blazer</a>
+                                        </h3>
+                                        <div class="item-price-container">
+                                            <span class="item-price">$299.<span class="sub-price">00</span></span>
+                                        </div><!-- End .item-price-container -->
+                                        <p>Integer eleifend molestie erat in consectetur. Donec eget tellus metus, eu malesuada libero. 
+    Suspendisse leo tortor, semper et mattis ac, fermentum ac libero. Nullam eget sapien eget ligula eleifend luctus.</p>
 
-                    <h2 class="sub-title">3 - Css</h2>
-                    <p>This is the part where Css files are explained.</p>
+                                    <a href="#" class="item-add-btn">
+                                        Add to Cart
+                                    </a>
+                                    </div><!-- End .slider-item-wrapper -->
+                                    
+                                </div><!-- End .slider-item-details -->
+                                
+                            </div><!-- End .slider-item -->
+                        </li>
+                        <li>
+                            <div class="slider-item">
+                                <img src="images/homeslider/slide3_1.jpg" alt="Slider item 3">
+                                <div class="slider-item-details">
+                                    <div class="slider-item-wrapper">
+                                        <h3 class="item-name">
+                                            <a href="product.html">Jacket Blue Jean</a>
+                                        </h3>
+                                        <div class="item-price-container">
+                                            <span class="item-price">$120</span>
+                                        </div><!-- End .item-price-container -->
+                                        <p>Integer eleifend molestie erat in consectetur. Donec eget tellus metus, eu malesuada libero. 
+    Suspendisse leo tortor, semper et mattis ac, fermentum ac libero. Nullam eget sapien eget ligula eleifend luctus.</p>
 
-                    <div class="lg-margin"></div>
-                    <div id="general-css">
-                        <h3 class="sub-title">3.1 - General</h3>
-                        <p> All css files are tested, commented and well-coded. Style.css file is the main css file of the Venedor. Other files are listed below...</p>
-                        <ul>
-                            <li><strong>bootstrap.min.css</strong> - Bootstrap Framework</li>
-                            <li><strong>font-awesome.min.css</strong> - FontAwesome font icons</li>
-                            <li><strong>animate.css</strong> - Animate.css</li>
-                            <li><strong>jquery.selectbox.css</strong> - For custom select</li>
-                            <li><strong>bootstrap-switch.css</strong> - Switch Buttons</li>
-                            <li><strong>prettyPhoto.css</strong> - PrettyPhoto Plugin Css File</li>
-                            <li><strong>owl.carousel.css</strong> - Owl Carousel Plugin Css File</li>
-                            <li><strong>colpick.css</strong> - ColorPick Plugin Css File ( Used on options panel) </li>
-							<li><strong>responsive.css</strong> - These files have the media queries for responsive design and retina display </li>
-                        </ul>
-                        <div class="md-margin"></div>
-                    </div>
-                    <div id="diff-css">
-                        <h3 class="sub-title">3.2 - Difference of Versions</h3>
-                        <p>All Homepage sliders have their own css files. All related styles  (responsive styles included) are seperated.<p>
-                        <p><strong>!!</strong> With the 1.5 update, we converted sequence slider to the revolution slider, for better responsiveness. So we used only 2 main slider for home pages. Bxslider for orange version, and revolution premium slider for other versions...</p>
-                        <ul>
-                            <li><strong>jquery.bxslider.css</strong> Bx Slider Plugin for Orange Version</li>
-                            <li><strong>revslider.css</strong> Revolution Plugin Styles for Other versions  <strong></strong></li>
-                        </ul>
-                    </div>
-                </div>
-                <hr class="sections">
+                                    <a href="#" class="item-add-btn">
+                                        Add to Cart
+                                    </a>
+                                    </div><!-- End .slider-item-wrapper -->
+                                    
+                                </div><!-- End .slider-item-details -->
+                            </div><!-- End .slider-item -->
+                            <div class="slider-item">
+                                <img src="images/homeslider/slide4_1.jpg" alt="Slider item 4">
+                                <div class="slider-item-details">
+                                    <div class="slider-item-wrapper">
+                                        <h3 class="item-name">
+                                            <a href="product.html">Blue Jean Blazer</a>
+                                        </h3>
+                                        <div class="item-price-container">
+                                            <span class="item-price">$490</span>
+                                        </div><!-- End .item-price-container -->
+                                        <p>Integer eleifend molestie erat in consectetur. Donec eget tellus metus, eu malesuada libero. 
+    Suspendisse leo tortor, semper et mattis ac, fermentum ac libero. Nullam eget sapien eget ligula eleifend luctus.</p>
 
-
-                <div id="js">
-                    <h2 class="sub-title">4 - Javascript </h2>
-                    <p>This is the part where javascript files are explained.</p>
-
-                    <div class="lg-margin"></div>
-                    
-                    <div id="general-js">
-                        <h3 class="sub-title">4.1 - General Javascript </h3>
-                        <p>All codes are commented and well coded. Id you want to change something, please be careful. If you are not sure what you are doing please contact me. So that i can help you.Other than home pages sliders and some others, all javascript/jquery codes are placed at the main.js file.</p>
-                        <hr>
-                        <p><strong>Caution:</strong> Owl carousel navigation buttons have specific ids. For the next button, you have to create id name with 'next' word to make it work. Please check code example below.</p>
-
-                        <hr>
-                        <p><strong>Update 1.4:</strong>
-                            We rewrite main.js file with the singleton pattern, and tidied code for better performance.
-                        </p>
-                        <hr>
-                        <p><strong>P.S : </strong>
-                            Now i included my api keys, for google map and twitter feed to prevent it from crushing. But You should follow the google map and twitter feed section and get your own api keys for your own website. 
-                        </p>
-<pre>
-var  brandSlider = $('div.brand-slider.owl-carousel');
-    if (checkSupport(brandSlider, $.fn.owlCarousel)) {
-        brandSlider.owlCarousel({
-            items: 6,
-            itemsDesktop : [1199,5],
-            itemsDesktopSmall: [979,4],
-            itemsTablet: [768,2],
-            itemsMobile : [479,1],
-            slideSpeed: 400,
-            autoPlay: true,
-            stopOnHover: false,
-            navigation: false,
-            pagination: false,
-            responsive: true  <strong>Place your id names like below at the main.js file when you are callin plugin</strong>
-        }).data('navigationBtns', ['#brand-slider-prev', '#brand-slider-next']);
-</pre>
-<div class="md-margin"></div>
-
-
-                    </div>
-
-                    <div class="lg-margin"></div>
-
-                    <div id="google-map">
-                        <h3 class="sub-title">4.2 - Google Map</h3>
-
-                        <p>
-                            Please go to <a href="//developers.google.com/maps/documentation/javascript/tutorial#api_key" target="_blank">Google Map Api Key</a> Page. Open contact.html and find Google map javascript api part that placed at the header section.
-                        </p>
-                        <img src="images/map.jpg" alt="Google map description">
-                        <div class="md-margin"></div>
-                        <p>Then open main.js file. Find Google javascript api v3 section. And change the parts as described at below.</p>
-<pre>
-    <strong>/* change your with your coordinates */</strong>
-        var myLatLng = new google.maps.LatLng(41.039193, 28.993818), // <strong>Your coordinates</strong>
-            mappy = {
-                center: myLatLng,
-                zoom: 15,
-                scrollwheel: false,
-                mapTypeId: google.maps.MapTypeId.ROADMAP,
-                styles: [{
-                    "elementType": "geometry",
-                    "stylers": [{
-                        "hue": "#000"
-                    }, {
-                        "weight": 1
-                    }, {
-                        "saturation": -200
-                    }, {
-                        "gamma": 0.70
-                    }, {
-                        "visibility": "on"
-                    }]
-                }]
-            };
-        var map = new google.maps.Map(document.getElementById("map"), mappy),
-            newpin = 'images/pin.png';
-
-        new google.maps.Marker({
-            position: myLatLng,
-            map: map,
-            icon: newpin,
-            animation: google.maps.Animation.DROP,
-            title: 'Venedor' <strong>Change with your title</strong>
-        });
-
-</pre>
-
-                    </div>
-                    <div class="lg-margin"></div>
-                    <div id="twitter-feed">
-                        <h3 class="sub-title">4.3 - Twitter Feed</h3>
-                        <ul>
-            <li><strong>Step 1: </strong> Go to <a href="https://dev.twitter.com/apps" target="_blank">Twitter Dev Page</a>. ( You must sign in)</li>
-            <li><strong>Step 2: </strong> Click to the Create a new application button.</li>
-            <li><strong>Step 3: </strong> Fill the inputs and then click to the Create your Twitter application button.</li>
-            <li><strong>Step 4: </strong> Now you will see a page like this.
-                <div class="md-margin"></div>
-            <img src="images/tw-1.png" alt="Twitter your application page">
-            <div class="md-margin"></div>
-            </li>
-            <li><strong>Step 5: </strong> Scroll down and Click to the Create my access token button. ( Click couple of times until you see created information box )</li>
-            <li><strong>Step 6: </strong> Now you will see a page like this.
-                <div class="md-margin"></div>
-            <img src="images/tw-2.png" alt="Twitter your application page">
-            <div class="md-margin"></div>
-            </li>
-            <li><strong>Step 7: </strong>Open Venedor Template folder, open js folder and then twitter folder. Open index.php file with any text editor. And Scroll down find these variables. Starts about 25. lines... And change its values with your new created keys.
-            <div class="md-margin"></div>
-<pre>
-    // Your Twitter App Consumer Key
-    private $consumer_key = '<strong>CONSUMER_KEY</strong>';
-
-    // Your Twitter App Consumer Secret
-    private $consumer_secret = '<strong>CONSUMER_SECRET</strong>';
-
-    // Your Twitter App Access Token
-    private $user_token = '<strong>ACCESS_TOKEN</strong>';
-
-    // Your Twitter App Access Token Secret
-    private $user_secret = '<strong>ACCESS_TOKEN_SECRET</strong>';
-</pre>
-<div class="md-margin"></div>
-            <img src="images/tw-3.png" alt="Twitter your application page">
-            <div class="md-margin"></div>
-            </li>
-            <li><strong>Step 8:</strong> After changing keys. Go back to js folder. And open main.js file with your text editor.</li>
-            <li><strong>Step 9:</strong> Find Twitter Feed Plugin section and  change query with whatever you want search from Twitter.</li>
-            <li><strong>Step 10: </strong>Done... Refresh your page enjoy :)</li>
-        </ul>
-                    </div>
-                    <div class="lg-margin"></div>
-                    <div id="flickr-feed">
-                        <h3 class="sub-title">4.4 - Flickr Feed</h3>
-                        <p>Go to <a href="//idgettr.com/">Flickridgtrr</a>. And get your Flickr id number. Go to js folder and open main.js file.  Find Flickr feed section. And change id with your new id.</p>
-
-<pre>
-    $('ul.flickr-feed-list').jflickrfeed({
-            limit: 6,
-            qstrings: {
-                id: 'xxxxxxxxxxxx'  -- <strong> Change xxxxxxxxxxxx with your new id</strong>
-            }
-        }
-</pre>
-                    </div>
-
-                </div>
-                <hr class="sections">
-                <div id="credits">
-                    <h2 class="sub-title">5 - Credits</h2>
-                    <p>Some resources that we used in Venedor Template.</p>
-                    <ul class="credits-list" target="_blank">
-                        <li> <a href="//jquery.com/">jQuery</a> </li>
-                        <li><a href="//getbootstrap.com/" target="_blank">Bootstrap</a> <small>(Front-end framework)</small></li>
-                        <li><a href="//fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome</a> <small>(Font icons)</small></li>
-                        <li><a href="//www.sequencejs.com/" target="_blank">Sequence Slider </a> <small>(No longer in use - Changed with revolution slider)</small></li>
-                        <li><a href="//jscrollpane.kelvinluck.com/" target="_blank">Jquery jscroll pane </a> <small>(for category filter)</small></li>
-                        <li><a href="//bxslider.com/" target="_blank">BxSlider </a> <small>(Orange Version Home Slider)</small></li>
-                        <li><a href="//codecanyon.net/item/slider-revolution-responsive-jquery-plugin/2580848" target="_blank">Revolution Slider </a> <small>( Premium Slider - $14)</small></li>
-                        <li><a href="//flexslider.woothemes.com/" target="_blank">Flex Slider 2 </a></li>
-                        <li><a href="//owlgraphic.com/owlcarousel/" target="_blank">Owl Carousel</a> <small>(For carousels)</small> </li>
-                        <li><a href="//www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/" target="_blank">PrettyPhoto</a> <small>(Lightbox plugin)</small> </li>
-                        <li><a href="//fitvidsjs.com/">FitVids.js</a> <small>(Plugin for fluid width video embeds)</small> </li>
-                        <li><a href="//isotope.metafizzy.co/" target="_blank">Isotope Plugin</a> <small>(Portfolio filter/sort - magical layouts plugin - Developer License $25)</small></li>
-                        <li><a href="//retinajs.com/" target="_blank">Retina.js</a> <small>(RDR)</small></li>
-                        <li><a href="//colpick.com/plugin" target="_blank">Colpick</a><small>(Color picker plugin)</small></li>
-                        <li><a href="//www.elevateweb.co.uk/image-zoom" target="_blank">Elevate Zoom Jquery Plugin</a><small>(jQuery zoom plugin)</small></li>
-                        <li><a href="//tympanus.net/codrops/2011/09/12/elastislide-responsive-carousel/" target="_blank">Elastslide Jquery Plugin</a><small>(Responsive jquery carousel)</small></li>
-
-                        <li><a href="//refreshless.com/nouislider/" target="_blank">noUiSlider</a><small>(jQuery Range Slider)</small></li>
-                        <li><a href="//modernizr.com/" target="_blank">Modernizr</a> <small>(Custom download - Some plugins required Modernizr)</small> </li>
-                        <li><a href="//www.newmediacampaigns.com/blog/a-jquery-flickr-feed-plugin"target="_blank">jflickrfeed</a> <small>(Flickr Feed Plugin)</small> </li>
-                        <li><a href="//github.com/StanScates/Tweet.js-Mod" target="_blank">Tweet.js</a> <small>(Twitter Feed Plugin)</small></li>
-                        <li><a href="//cherne.net/brian/resources/jquery.hoverIntent.html" target="_blank">HoverIntent Plugin</a> </li>
-                        <li> <a href="//code.google.com/p/html5shiv/" target="_blank">Html5Shiv.js</a> <small>(Support for Html5 Elements)</small> </li>
-                        <li> <a href="//github.com/scottjehl/Respond" target="_blank">Responsd.js</a> <small>(Support CSS3 Media Queries)</small></li>
-                        <li> <a href="//www.google.com/fonts" target="_blank">Google Fonts</a></li>
-                        <li><a href="//www.addthis.com/" target="_blank">Addthis</a></li>
-                        <li><a href="//github.com/matthieua/WOW" target="_blank">Wow.js</a> <small>(For scroll animations with animate.css)</small></li>
-                        <li><a href="//daneden.github.io/animate.css/" title="_blank">Animate.css</a></li>
-                        <li><a href="//buildinternet.com/project/supersized/" target="_blank">Supersized Plugin</a><small>(For Browngreen version background slider)</small></li>
-                        <li><a href="//www.bootstrap-switch.org/" target="_blank">Bootstrap Switch</a><small>(Swtich buttons)</small></li>
-                        <li><a href="//www.bulgaria-web-developers.com/projects/javascript/selectbox/" target="_blank">Selectbox Plugin</a> <small>(Custom Select)</small></li>
+                                    <a href="#" class="item-add-btn">
+                                        Add to Cart
+                                    </a>
+                                    </div><!-- End .slider-item-wrapper -->
+                                    
+                                </div><!-- End .slider-item-details -->
+                            </div><!-- End .slider-item -->
+                        </li>
                     </ul>
-                </div>
-                <hr class="sections">
-                <div id="updates">
-                    <h2 class="sub-title">6 - Updates</h2>
-<pre>
-* Date :  [ 11.04.2014 ]
-- 1.0 - Release
-</pre>
-<br>
-<pre>
-* Date :  [ 12.04.2014 ]
-- 1.1 - Update
-	+ Added Brown version
-	- Fixed some minor css bugs
-	- Fixed Revolution plugin loading.gif issue for Pink/Blue/Brown version
-</pre>
-<br>
-<pre>
-* Date :  [ 15.04.2014 ]
-- 1.2 - Update
-    - Fixed carousels alignment issue
-    - Fixed some minor css bugs
-    + Activated prettyphoto lightbox plugin gallery feature
-</pre>
-<br>
-<pre>
-* Date :  [ 22.04.2014 ]
-- 1.3 - Update
-    + Added Green2 version
-    - Fixed some minor css bugs
-</pre>
-<br>
-<pre>
-* Date :  [ 25.07.2014 ]
-- 1.4 - Update
-    + Added blueorange version
-    + Added blueorange2 version
-    + Added browngreen version
-    + Added 13 detailed elements page
-    + Added 7 Header variants for each versions
-    + Added 3 Footer variants for each versions
-    + Added Portfolio Masonry pages
-    + Changed Product zoom plugin
-    - Updated bootstrap 3.2
-    - Updated Font Awesome icons
-    - Updated jquery
-    - Updated revolution slider
-    - Updated retina.js
-    - Rewrited main.js file
-    - Fixed small bugs
-</pre>
-<br>
-<pre>
-* Date :  [ 29.07.2014 ]
-- 1.5 - Update
-    - Changed sequence slider to reolution slider (For green and green2 version)
-    - Fixed some css bugs
-</pre>
+                </div><!-- End #bxslider -->
+            </div><!-- #slider-edge -->
+        	
+        	<div class="lg-margin"></div><!-- Space -->
+            
+        	<div class="container">
+        		<div class="row">
+        			<div class="col-md-12">
 
-<br>
-<pre>
-* Date : [ 10.08.2014 ]
-- 1.6 - Update
-    - Updated Revolution Slider
-    - Fixed Revolution Slider Transiton issues
-</pre>
-                </div>
+                        <div class="row home-banners">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <a href="#"><img src="images/big-banner-1.png" alt="Home Big Banner 1" class="img-responsive"></a>
+                            </div><!-- End .col-md-6 -->
+                            
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <a href="#"><img src="images/big-banner-2.png" alt="Home Big Banner 2" class="img-responsive"></a>
+                            </div><!-- End .col-md-6 -->
+                        </div><!-- End .home-banners -->
+        				
+                        <div class="lg-margin"></div><!-- space -->
 
-                <hr class="sections">
-                <div id="faqs">
-                    <h2 class="sub-title">7 - FaQs</h2>
+        				<div class="row">
+        					
+        					<div class="col-md-9 col-sm-8 col-xs-12 main-content">
+        						<header class="content-title">
+									<h2 class="title">Our Products</h2>
+									<p class="title-desc">Save your money and time with our store. Here's the best part of our impressive assortment.</p>
+								</header>
+        						<ul id="products-tabs-list" class="tab-style-1 clearfix">
+        							<li class="active"><a href="#all" data-toggle="tab">All</a></li>
+        							<li><a href="#latest" data-toggle="tab">Latest</a></li>
+        							<li><a href="#featured" data-toggle="tab">Featured</a></li>
+        							<li><a href="#bestsellers" data-toggle="tab">Bestsellers</a></li>
+        							<li><a href="#special" data-toggle="tab">Special</a></li>
+        						</ul>
+        						
+        						<div id="products-tabs-content" class="row tab-content">
+        							<div class="tab-pane active" id="all">
+									<div class="col-md-4 col-sm-6 col-xs-12">
+        								<div class="item">
+                                            <div class="item-image-wrapper">
+                                                <figure class="item-image-container">
+                                                    <a href="product.html">
+                                                        <img src="images/products/item1.jpg" alt="item1" class="item-image">
+                                                        <img src="images/products/item1-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                    </a>
+                                                </figure><!-- End .item-image-container -->
+                                                <span class="new-circle top-left">New</span>
+                                                <span class="discount-circle top-right">-15%</span>
+
+                                            </div><!-- End .item-image-wrapper -->
+                                            <div class="item-meta-container">
+                                                <div class="item-meta-inner-container clearfix">
+
+                                                    <div class="item-price-container inline pull-left">
+                                                        <span class="old-price">$99</span>
+                                                        <span class="item-price">$49<span class="sub-price">.99</span></span>
+                                                    </div><!-- End .item-price-container -->
+                                                    <div class="ratings-container pull-right">
+                                                        <div class="ratings">
+                                                            <div class="ratings-result" data-result="70"></div>
+                                                        </div><!-- End .ratings -->
+                                                    </div><!-- End .rating-container -->
+
+                                                </div><!-- End .item-meta-inner-container -->
+                                                
+                                                <h3 class="item-name"><a href="product.html">Phasellus consequat</a></h3>
+                                                <div class="item-action">
+                                                    <a href="#" class="item-add-btn">
+                                                        <span class="icon-cart-text">Add to Cart</span>
+                                                    </a>
+                                                    <div class="item-action-inner">
+                                                        <a href="#" class="icon-button icon-like">Favourite</a>
+                                                        <a href="#" class="icon-button icon-compare">Checkout</a>
+                                                    </div><!-- End .item-action-inner -->
+                                                </div><!-- End .item-action -->
+                                            </div><!-- End .item-meta-container --> 
+                                        </div><!-- End .item -->
+        							</div><!-- End .col-md-4 -->
+        							<div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="item">
+                                            <div class="item-image-wrapper">
+                                                <figure class="item-image-container">
+                                                    <a href="product.html">
+                                                        <img src="images/products/item2.jpg" alt="item1" class="item-image">
+                                                        <img src="images/products/item2-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                    </a>
+                                                </figure><!-- End .item-image-container -->
+
+                                            </div><!-- End .item-image-wrapper -->
+                                            <div class="item-meta-container">
+                                                <div class="item-meta-inner-container clearfix">
+
+                                                    <div class="item-price-container inline pull-left">
+                                                        <span class="item-price">$99<span class="sub-price">.99</span></span>
+                                                    </div><!-- End .item-price-container -->
+                                                    <div class="ratings-container pull-right">
+                                                        <div class="ratings">
+                                                            <div class="ratings-result" data-result="90"></div>
+                                                        </div><!-- End .ratings -->
+                                                    </div><!-- End .rating-container -->
+
+                                                </div><!-- End .item-meta-inner-container -->
+                                                
+                                                <h3 class="item-name"><a href="product.html">Phasellus consequat</a></h3>
+                                                <div class="item-action">
+                                                    <a href="#" class="item-add-btn">
+                                                        <span class="icon-cart-text">Add to Cart</span>
+                                                    </a>
+                                                    <div class="item-action-inner">
+                                                        <a href="#" class="icon-button icon-like">Favourite</a>
+                                                        <a href="#" class="icon-button icon-compare">Checkout</a>
+                                                    </div><!-- End .item-action-inner -->
+                                                </div><!-- End .item-action -->
+                                            </div><!-- End .item-meta-container --> 
+                                        </div><!-- End .item -->
+                                    </div><!-- End .col-md-4 -->
+        							<div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="item">
+                                            <div class="item-image-wrapper">
+                                                <figure class="item-image-container">
+                                                    <a href="product.html">
+                                                        <img src="images/products/item4.jpg" alt="item1" class="item-image">
+                                                        <img src="images/products/item4-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                    </a>
+                                                </figure><!-- End .item-image-container -->
+                                                <span class="new-circle top-left">New</span>
+                                            </div><!-- End .item-image-wrapper -->
+                                            <div class="item-meta-container">
+                                                <div class="item-meta-inner-container clearfix">
+
+                                                    <div class="item-price-container inline pull-left">
+                                                        <span class="item-price">$29</span>
+                                                    </div><!-- End .item-price-container -->
+                                                    <div class="ratings-container pull-right">
+                                                        <div class="ratings">
+                                                            <div class="ratings-result" data-result="20"></div>
+                                                        </div><!-- End .ratings -->
+                                                    </div><!-- End .rating-container -->
+
+                                                </div><!-- End .item-meta-inner-container -->
+                                                
+                                                <h3 class="item-name"><a href="product.html">Phasellus consequat</a></h3>
+                                                <div class="item-action">
+                                                    <a href="#" class="item-add-btn">
+                                                        <span class="icon-cart-text">Add to Cart</span>
+                                                    </a>
+                                                    <div class="item-action-inner">
+                                                        <a href="#" class="icon-button icon-like">Favourite</a>
+                                                        <a href="#" class="icon-button icon-compare">Checkout</a>
+                                                    </div><!-- End .item-action-inner -->
+                                                </div><!-- End .item-action -->
+                                            </div><!-- End .item-meta-container --> 
+                                        </div><!-- End .item -->
+                                    </div><!-- End .col-md-4 -->
+        							<div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="item">
+                                            <div class="item-image-wrapper">
+                                                <figure class="item-image-container">
+                                                    <a href="product.html">
+                                                        <img src="images/products/item5.jpg" alt="item1" class="item-image">
+                                                        <img src="images/products/item5-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                    </a>
+                                                </figure><!-- End .item-image-container -->
+                                                <span class="discount-circle top-right">-25%</span>
+
+                                            </div><!-- End .item-image-wrapper -->
+                                            <div class="item-meta-container">
+                                                <div class="item-meta-inner-container clearfix">
+
+                                                    <div class="item-price-container inline pull-left">
+                                                        <span class="old-price">$120</span>
+                                                        <span class="item-price">$60<span class="sub-price">.99</span></span>
+                                                    </div><!-- End .item-price-container -->
+                                                    <div class="ratings-container pull-right">
+                                                        <div class="ratings">
+                                                            <div class="ratings-result" data-result="95"></div>
+                                                        </div><!-- End .ratings -->
+                                                    </div><!-- End .rating-container -->
+
+                                                </div><!-- End .item-meta-inner-container -->
+                                                
+                                                <h3 class="item-name"><a href="product.html">Phasellus consequat</a></h3>
+                                                <div class="item-action">
+                                                    <a href="#" class="item-add-btn">
+                                                        <span class="icon-cart-text">Add to Cart</span>
+                                                    </a>
+                                                    <div class="item-action-inner">
+                                                        <a href="#" class="icon-button icon-like">Favourite</a>
+                                                        <a href="#" class="icon-button icon-compare">Checkout</a>
+                                                    </div><!-- End .item-action-inner -->
+                                                </div><!-- End .item-action -->
+                                            </div><!-- End .item-meta-container --> 
+                                        </div><!-- End .item -->
+                                    </div><!-- End .col-md-4 -->
+        							<div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="item">
+                                            <div class="item-image-wrapper">
+                                                <figure class="item-image-container">
+                                                    <a href="product.html">
+                                                        <img src="images/products/item7.jpg" alt="item1" class="item-image">
+                                                        <img src="images/products/item7-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                    </a>
+                                                </figure><!-- End .item-image-container -->
+                                                <span class="new-circle top-left">New</span>
+
+                                            </div><!-- End .item-image-wrapper -->
+                                            <div class="item-meta-container">
+                                                <div class="item-meta-inner-container clearfix">
+
+                                                    <div class="item-price-container inline pull-left">
+                                                        <span class="item-price">$299<span class="sub-price">.99</span></span>
+                                                    </div><!-- End .item-price-container -->
+                                                    <div class="ratings-container pull-right">
+                                                        <div class="ratings">
+                                                            <div class="ratings-result" data-result="66"></div>
+                                                        </div><!-- End .ratings -->
+                                                    </div><!-- End .rating-container -->
+
+                                                </div><!-- End .item-meta-inner-container -->
+                                                
+                                                <h3 class="item-name"><a href="product.html">Phasellus consequat</a></h3>
+                                                <div class="item-action">
+                                                    <a href="#" class="item-add-btn">
+                                                        <span class="icon-cart-text">Add to Cart</span>
+                                                    </a>
+                                                    <div class="item-action-inner">
+                                                        <a href="#" class="icon-button icon-like">Favourite</a>
+                                                        <a href="#" class="icon-button icon-compare">Checkout</a>
+                                                    </div><!-- End .item-action-inner -->
+                                                </div><!-- End .item-action -->
+                                            </div><!-- End .item-meta-container --> 
+                                        </div><!-- End .item -->
+                                    </div><!-- End .col-md-4 -->
+        							<div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="item">
+                                            <div class="item-image-wrapper">
+                                                <figure class="item-image-container">
+                                                    <a href="product.html">
+                                                        <img src="images/products/item10.jpg" alt="item1" class="item-image">
+                                                        <img src="images/products/item10-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                    </a>
+                                                </figure><!-- End .item-image-container -->
+
+                                            </div><!-- End .item-image-wrapper -->
+                                            <div class="item-meta-container">
+                                                <div class="item-meta-inner-container clearfix">
+
+                                                    <div class="item-price-container inline pull-left">
+                                                        <span class="item-price">$19<span class="sub-price">.99</span></span>
+                                                    </div><!-- End .item-price-container -->
+                                                    <div class="ratings-container pull-right">
+                                                        <div class="ratings">
+                                                            <div class="ratings-result" data-result="96"></div>
+                                                        </div><!-- End .ratings -->
+                                                    </div><!-- End .rating-container -->
+
+                                                </div><!-- End .item-meta-inner-container -->
+                                                
+                                                <h3 class="item-name"><a href="product.html">Phasellus consequat</a></h3>
+                                                <div class="item-action">
+                                                    <a href="#" class="item-add-btn">
+                                                        <span class="icon-cart-text">Add to Cart</span>
+                                                    </a>
+                                                    <div class="item-action-inner">
+                                                        <a href="#" class="icon-button icon-like">Favourite</a>
+                                                        <a href="#" class="icon-button icon-compare">Checkout</a>
+                                                    </div><!-- End .item-action-inner -->
+                                                </div><!-- End .item-action -->
+                                            </div><!-- End .item-meta-container --> 
+                                        </div><!-- End .item -->
+                                    </div><!-- End .col-md-4 -->
+        							</div><!-- End .tab-pane -->
+        							
+        							<div class="tab-pane" id="latest">
+        								<div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="item">
+                                            <div class="item-image-wrapper">
+                                                <figure class="item-image-container">
+                                                    <a href="product.html">
+                                                        <img src="images/products/item6.jpg" alt="item1" class="item-image">
+                                                        <img src="images/products/item6-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                    </a>
+                                                </figure><!-- End .item-image-container -->
+                                                <span class="new-circle top-left">New</span>
+
+                                            </div><!-- End .item-image-wrapper -->
+                                            <div class="item-meta-container">
+                                                <div class="item-meta-inner-container clearfix">
+
+                                                    <div class="item-price-container inline pull-left">
+                                                        <span class="old-price">$99</span>
+                                                        <span class="item-price">$49<span class="sub-price">.99</span></span>
+                                                    </div><!-- End .item-price-container -->
+                                                    <div class="ratings-container pull-right">
+                                                        <div class="ratings">
+                                                            <div class="ratings-result" data-result="70"></div>
+                                                        </div><!-- End .ratings -->
+                                                    </div><!-- End .rating-container -->
+
+                                                </div><!-- End .item-meta-inner-container -->
+                                                
+                                                <h3 class="item-name"><a href="product.html">Phasellus consequat</a></h3>
+                                                <div class="item-action">
+                                                    <a href="#" class="item-add-btn">
+                                                        <span class="icon-cart-text">Add to Cart</span>
+                                                    </a>
+                                                    <div class="item-action-inner">
+                                                        <a href="#" class="icon-button icon-like">Favourite</a>
+                                                        <a href="#" class="icon-button icon-compare">Checkout</a>
+                                                    </div><!-- End .item-action-inner -->
+                                                </div><!-- End .item-action -->
+                                            </div><!-- End .item-meta-container --> 
+                                        </div><!-- End .item -->
+                                    </div><!-- End .col-md-4 -->
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="item">
+                                            <div class="item-image-wrapper">
+                                                <figure class="item-image-container">
+                                                    <a href="product.html">
+                                                        <img src="images/products/item4.jpg" alt="item1" class="item-image">
+                                                        <img src="images/products/item4-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                    </a>
+                                                </figure><!-- End .item-image-container -->
+
+                                            </div><!-- End .item-image-wrapper -->
+                                            <div class="item-meta-container">
+                                                <div class="item-meta-inner-container clearfix">
+
+                                                    <div class="item-price-container inline pull-left">
+                                                        <span class="item-price">$99<span class="sub-price">.99</span></span>
+                                                    </div><!-- End .item-price-container -->
+                                                    <div class="ratings-container pull-right">
+                                                        <div class="ratings">
+                                                            <div class="ratings-result" data-result="90"></div>
+                                                        </div><!-- End .ratings -->
+                                                    </div><!-- End .rating-container -->
+
+                                                </div><!-- End .item-meta-inner-container -->
+                                                
+                                                <h3 class="item-name"><a href="product.html">Phasellus consequat</a></h3>
+                                                <div class="item-action">
+                                                    <a href="#" class="item-add-btn">
+                                                        <span class="icon-cart-text">Add to Cart</span>
+                                                    </a>
+                                                    <div class="item-action-inner">
+                                                        <a href="#" class="icon-button icon-like">Favourite</a>
+                                                        <a href="#" class="icon-button icon-compare">Checkout</a>
+                                                    </div><!-- End .item-action-inner -->
+                                                </div><!-- End .item-action -->
+                                            </div><!-- End .item-meta-container --> 
+                                        </div><!-- End .item -->
+                                    </div><!-- End .col-md-4 -->
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="item">
+                                            <div class="item-image-wrapper">
+                                                <figure class="item-image-container">
+                                                    <a href="product.html">
+                                                        <img src="images/products/item3.jpg" alt="item1" class="item-image">
+                                                        <img src="images/products/item3-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                    </a>
+                                                </figure><!-- End .item-image-container -->
+                                                <span class="new-circle top-left">New</span>
+                                            </div><!-- End .item-image-wrapper -->
+                                            <div class="item-meta-container">
+                                                <div class="item-meta-inner-container clearfix">
+
+                                                    <div class="item-price-container inline pull-left">
+                                                        <span class="item-price">$29</span>
+                                                    </div><!-- End .item-price-container -->
+                                                    <div class="ratings-container pull-right">
+                                                        <div class="ratings">
+                                                            <div class="ratings-result" data-result="80"></div>
+                                                        </div><!-- End .ratings -->
+                                                    </div><!-- End .rating-container -->
+
+                                                </div><!-- End .item-meta-inner-container -->
+                                                
+                                                <h3 class="item-name"><a href="product.html">Phasellus consequat</a></h3>
+                                                <div class="item-action">
+                                                    <a href="#" class="item-add-btn">
+                                                        <span class="icon-cart-text">Add to Cart</span>
+                                                    </a>
+                                                    <div class="item-action-inner">
+                                                        <a href="#" class="icon-button icon-like">Favourite</a>
+                                                        <a href="#" class="icon-button icon-compare">Checkout</a>
+                                                    </div><!-- End .item-action-inner -->
+                                                </div><!-- End .item-action -->
+                                            </div><!-- End .item-meta-container --> 
+                                        </div><!-- End .item -->
+                                    </div><!-- End .col-md-4 -->
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="item">
+                                            <div class="item-image-wrapper">
+                                                <figure class="item-image-container">
+                                                    <a href="product.html">
+                                                        <img src="images/products/item9.jpg" alt="item1" class="item-image">
+                                                        <img src="images/products/item9-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                    </a>
+                                                </figure><!-- End .item-image-container -->
+                                                <span class="discount-circle top-right">-25%</span>
+
+                                            </div><!-- End .item-image-wrapper -->
+                                            <div class="item-meta-container">
+                                                <div class="item-meta-inner-container clearfix">
+
+                                                    <div class="item-price-container inline pull-left">
+                                                        <span class="item-price">$60<span class="sub-price">.99</span></span>
+                                                    </div><!-- End .item-price-container -->
+                                                    <div class="ratings-container pull-right">
+                                                        <div class="ratings">
+                                                            <div class="ratings-result" data-result="95"></div>
+                                                        </div><!-- End .ratings -->
+                                                    </div><!-- End .rating-container -->
+
+                                                </div><!-- End .item-meta-inner-container -->
+                                                
+                                                <h3 class="item-name"><a href="product.html">Phasellus consequat</a></h3>
+                                                <div class="item-action">
+                                                    <a href="#" class="item-add-btn">
+                                                        <span class="icon-cart-text">Add to Cart</span>
+                                                    </a>
+                                                    <div class="item-action-inner">
+                                                        <a href="#" class="icon-button icon-like">Favourite</a>
+                                                        <a href="#" class="icon-button icon-compare">Checkout</a>
+                                                    </div><!-- End .item-action-inner -->
+                                                </div><!-- End .item-action -->
+                                            </div><!-- End .item-meta-container --> 
+                                        </div><!-- End .item -->
+                                    </div><!-- End .col-md-4 -->
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="item">
+                                            <div class="item-image-wrapper">
+                                                <figure class="item-image-container">
+                                                    <a href="product.html">
+                                                        <img src="images/products/item2.jpg" alt="item1" class="item-image">
+                                                        <img src="images/products/item2-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                    </a>
+                                                </figure><!-- End .item-image-container -->
+
+                                            </div><!-- End .item-image-wrapper -->
+                                            <div class="item-meta-container">
+                                                <div class="item-meta-inner-container clearfix">
+
+                                                    <div class="item-price-container inline pull-left">
+                                                        <span class="item-price">$299<span class="sub-price">.99</span></span>
+                                                    </div><!-- End .item-price-container -->
+                                                    <div class="ratings-container pull-right">
+                                                        <div class="ratings">
+                                                            <div class="ratings-result" data-result="66"></div>
+                                                        </div><!-- End .ratings -->
+                                                    </div><!-- End .rating-container -->
+
+                                                </div><!-- End .item-meta-inner-container -->
+                                                
+                                                <h3 class="item-name"><a href="product.html">Phasellus consequat</a></h3>
+                                                <div class="item-action">
+                                                    <a href="#" class="item-add-btn">
+                                                        <span class="icon-cart-text">Add to Cart</span>
+                                                    </a>
+                                                    <div class="item-action-inner">
+                                                        <a href="#" class="icon-button icon-like">Favourite</a>
+                                                        <a href="#" class="icon-button icon-compare">Checkout</a>
+                                                    </div><!-- End .item-action-inner -->
+                                                </div><!-- End .item-action -->
+                                            </div><!-- End .item-meta-container --> 
+                                        </div><!-- End .item -->
+                                    </div><!-- End .col-md-4 -->
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="item">
+                                            <div class="item-image-wrapper">
+                                                <figure class="item-image-container">
+                                                    <a href="product.html">
+                                                        <img src="images/products/item5.jpg" alt="item1" class="item-image">
+                                                        <img src="images/products/item5-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                    </a>
+                                                </figure><!-- End .item-image-container -->
+
+                                            </div><!-- End .item-image-wrapper -->
+                                            <div class="item-meta-container">
+                                                <div class="item-meta-inner-container clearfix">
+
+                                                    <div class="item-price-container inline pull-left">
+                                                        <span class="item-price">$129<span class="sub-price">.99</span></span>
+                                                    </div><!-- End .item-price-container -->
+                                                    <div class="ratings-container pull-right">
+                                                        <div class="ratings">
+                                                            <div class="ratings-result" data-result="46"></div>
+                                                        </div><!-- End .ratings -->
+                                                    </div><!-- End .rating-container -->
+
+                                                </div><!-- End .item-meta-inner-container -->
+                                                
+                                                <h3 class="item-name"><a href="product.html">Phasellus consequat</a></h3>
+                                                <div class="item-action">
+                                                    <a href="#" class="item-add-btn">
+                                                        <span class="icon-cart-text">Add to Cart</span>
+                                                    </a>
+                                                    <div class="item-action-inner">
+                                                        <a href="#" class="icon-button icon-like">Favourite</a>
+                                                        <a href="#" class="icon-button icon-compare">Checkout</a>
+                                                    </div><!-- End .item-action-inner -->
+                                                </div><!-- End .item-action -->
+                                            </div><!-- End .item-meta-container --> 
+                                        </div><!-- End .item -->
+                                    </div><!-- End .col-md-4 -->
+        							</div><!-- End .tab-pane -->
+        							
+        							<div class="tab-pane" id="featured">
+									<div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="item">
+                                            <div class="item-image-wrapper">
+                                                <figure class="item-image-container">
+                                                    <a href="product.html">
+                                                        <img src="images/products/item9.jpg" alt="item1" class="item-image">
+                                                        <img src="images/products/item9-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                    </a>
+                                                </figure><!-- End .item-image-container -->
+                                                <span class="new-circle top-left">New</span>
+
+                                            </div><!-- End .item-image-wrapper -->
+                                            <div class="item-meta-container">
+                                                <div class="item-meta-inner-container clearfix">
+
+                                                    <div class="item-price-container inline pull-left">
+                                                        <span class="old-price">$99</span>
+                                                        <span class="item-price">$49<span class="sub-price">.99</span></span>
+                                                    </div><!-- End .item-price-container -->
+                                                    <div class="ratings-container pull-right">
+                                                        <div class="ratings">
+                                                            <div class="ratings-result" data-result="70"></div>
+                                                        </div><!-- End .ratings -->
+                                                    </div><!-- End .rating-container -->
+
+                                                </div><!-- End .item-meta-inner-container -->
+                                                
+                                                <h3 class="item-name"><a href="product.html">Phasellus consequat</a></h3>
+                                                <div class="item-action">
+                                                    <a href="#" class="item-add-btn">
+                                                        <span class="icon-cart-text">Add to Cart</span>
+                                                    </a>
+                                                    <div class="item-action-inner">
+                                                        <a href="#" class="icon-button icon-like">Favourite</a>
+                                                        <a href="#" class="icon-button icon-compare">Checkout</a>
+                                                    </div><!-- End .item-action-inner -->
+                                                </div><!-- End .item-action -->
+                                            </div><!-- End .item-meta-container --> 
+                                        </div><!-- End .item -->
+                                    </div><!-- End .col-md-4 -->
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="item">
+                                            <div class="item-image-wrapper">
+                                                <figure class="item-image-container">
+                                                    <a href="product.html">
+                                                        <img src="images/products/item2.jpg" alt="item1" class="item-image">
+                                                        <img src="images/products/item2-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                    </a>
+                                                </figure><!-- End .item-image-container -->
+
+                                            </div><!-- End .item-image-wrapper -->
+                                            <div class="item-meta-container">
+                                                <div class="item-meta-inner-container clearfix">
+
+                                                    <div class="item-price-container inline pull-left">
+                                                        <span class="item-price">$99<span class="sub-price">.99</span></span>
+                                                    </div><!-- End .item-price-container -->
+                                                    <div class="ratings-container pull-right">
+                                                        <div class="ratings">
+                                                            <div class="ratings-result" data-result="90"></div>
+                                                        </div><!-- End .ratings -->
+                                                    </div><!-- End .rating-container -->
+
+                                                </div><!-- End .item-meta-inner-container -->
+                                                
+                                                <h3 class="item-name"><a href="product.html">Phasellus consequat</a></h3>
+                                                <div class="item-action">
+                                                    <a href="#" class="item-add-btn">
+                                                        <span class="icon-cart-text">Add to Cart</span>
+                                                    </a>
+                                                    <div class="item-action-inner">
+                                                        <a href="#" class="icon-button icon-like">Favourite</a>
+                                                        <a href="#" class="icon-button icon-compare">Checkout</a>
+                                                    </div><!-- End .item-action-inner -->
+                                                </div><!-- End .item-action -->
+                                            </div><!-- End .item-meta-container --> 
+                                        </div><!-- End .item -->
+                                    </div><!-- End .col-md-4 -->
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="item">
+                                            <div class="item-image-wrapper">
+                                                <figure class="item-image-container">
+                                                    <a href="product.html">
+                                                        <img src="images/products/item10.jpg" alt="item1" class="item-image">
+                                                        <img src="images/products/item10-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                    </a>
+                                                </figure><!-- End .item-image-container -->
+                                                <span class="new-circle top-left">New</span>
+                                            </div><!-- End .item-image-wrapper -->
+                                            <div class="item-meta-container">
+                                                <div class="item-meta-inner-container clearfix">
+
+                                                    <div class="item-price-container inline pull-left">
+                                                        <span class="item-price">$29</span>
+                                                    </div><!-- End .item-price-container -->
+                                                    <div class="ratings-container pull-right">
+                                                        <div class="ratings">
+                                                            <div class="ratings-result" data-result="80"></div>
+                                                        </div><!-- End .ratings -->
+                                                    </div><!-- End .rating-container -->
+
+                                                </div><!-- End .item-meta-inner-container -->
+                                                
+                                                <h3 class="item-name"><a href="product.html">Phasellus consequat</a></h3>
+                                                <div class="item-action">
+                                                    <a href="#" class="item-add-btn">
+                                                        <span class="icon-cart-text">Add to Cart</span>
+                                                    </a>
+                                                    <div class="item-action-inner">
+                                                        <a href="#" class="icon-button icon-like">Favourite</a>
+                                                        <a href="#" class="icon-button icon-compare">Checkout</a>
+                                                    </div><!-- End .item-action-inner -->
+                                                </div><!-- End .item-action -->
+                                            </div><!-- End .item-meta-container --> 
+                                        </div><!-- End .item -->
+                                    </div><!-- End .col-md-4 -->
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="item">
+                                            <div class="item-image-wrapper">
+                                                <figure class="item-image-container">
+                                                    <a href="product.html">
+                                                        <img src="images/products/item1.jpg" alt="item1" class="item-image">
+                                                        <img src="images/products/item1-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                    </a>
+                                                </figure><!-- End .item-image-container -->
+                                                <span class="discount-circle top-right">-25%</span>
+
+                                            </div><!-- End .item-image-wrapper -->
+                                            <div class="item-meta-container">
+                                                <div class="item-meta-inner-container clearfix">
+
+                                                    <div class="item-price-container inline pull-left">
+                                                        <span class="item-price">$60<span class="sub-price">.99</span></span>
+                                                    </div><!-- End .item-price-container -->
+                                                    <div class="ratings-container pull-right">
+                                                        <div class="ratings">
+                                                            <div class="ratings-result" data-result="95"></div>
+                                                        </div><!-- End .ratings -->
+                                                    </div><!-- End .rating-container -->
+
+                                                </div><!-- End .item-meta-inner-container -->
+                                                
+                                                <h3 class="item-name"><a href="product.html">Phasellus consequat</a></h3>
+                                                <div class="item-action">
+                                                    <a href="#" class="item-add-btn">
+                                                        <span class="icon-cart-text">Add to Cart</span>
+                                                    </a>
+                                                    <div class="item-action-inner">
+                                                        <a href="#" class="icon-button icon-like">Favourite</a>
+                                                        <a href="#" class="icon-button icon-compare">Checkout</a>
+                                                    </div><!-- End .item-action-inner -->
+                                                </div><!-- End .item-action -->
+                                            </div><!-- End .item-meta-container --> 
+                                        </div><!-- End .item -->
+                                    </div><!-- End .col-md-4 -->
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="item">
+                                            <div class="item-image-wrapper">
+                                                <figure class="item-image-container">
+                                                    <a href="product.html">
+                                                        <img src="images/products/item4.jpg" alt="item1" class="item-image">
+                                                        <img src="images/products/item4-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                    </a>
+                                                </figure><!-- End .item-image-container -->
+
+                                            </div><!-- End .item-image-wrapper -->
+                                            <div class="item-meta-container">
+                                                <div class="item-meta-inner-container clearfix">
+
+                                                    <div class="item-price-container inline pull-left">
+                                                        <span class="item-price">$299<span class="sub-price">.99</span></span>
+                                                    </div><!-- End .item-price-container -->
+                                                    <div class="ratings-container pull-right">
+                                                        <div class="ratings">
+                                                            <div class="ratings-result" data-result="66"></div>
+                                                        </div><!-- End .ratings -->
+                                                    </div><!-- End .rating-container -->
+
+                                                </div><!-- End .item-meta-inner-container -->
+                                                
+                                                <h3 class="item-name"><a href="product.html">Phasellus consequat</a></h3>
+                                                <div class="item-action">
+                                                    <a href="#" class="item-add-btn">
+                                                        <span class="icon-cart-text">Add to Cart</span>
+                                                    </a>
+                                                    <div class="item-action-inner">
+                                                        <a href="#" class="icon-button icon-like">Favourite</a>
+                                                        <a href="#" class="icon-button icon-compare">Checkout</a>
+                                                    </div><!-- End .item-action-inner -->
+                                                </div><!-- End .item-action -->
+                                            </div><!-- End .item-meta-container --> 
+                                        </div><!-- End .item -->
+                                    </div><!-- End .col-md-4 -->
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="item">
+                                            <div class="item-image-wrapper">
+                                                <figure class="item-image-container">
+                                                    <a href="product.html">
+                                                        <img src="images/products/item3.jpg" alt="item1" class="item-image">
+                                                        <img src="images/products/item3-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                    </a>
+                                                </figure><!-- End .item-image-container -->
+
+                                            </div><!-- End .item-image-wrapper -->
+                                            <div class="item-meta-container">
+                                                <div class="item-meta-inner-container clearfix">
+
+                                                    <div class="item-price-container inline pull-left">
+                                                        <span class="item-price">$129<span class="sub-price">.99</span></span>
+                                                    </div><!-- End .item-price-container -->
+                                                    <div class="ratings-container pull-right">
+                                                        <div class="ratings">
+                                                            <div class="ratings-result" data-result="46"></div>
+                                                        </div><!-- End .ratings -->
+                                                    </div><!-- End .rating-container -->
+
+                                                </div><!-- End .item-meta-inner-container -->
+                                                
+                                                <h3 class="item-name"><a href="product.html">Phasellus consequat</a></h3>
+                                                <div class="item-action">
+                                                    <a href="#" class="item-add-btn">
+                                                        <span class="icon-cart-text">Add to Cart</span>
+                                                    </a>
+                                                    <div class="item-action-inner">
+                                                        <a href="#" class="icon-button icon-like">Favourite</a>
+                                                        <a href="#" class="icon-button icon-compare">Checkout</a>
+                                                    </div><!-- End .item-action-inner -->
+                                                </div><!-- End .item-action -->
+                                            </div><!-- End .item-meta-container --> 
+                                        </div><!-- End .item -->
+                                    </div><!-- End .col-md-4 -->
+        							</div><!-- End .tab-pane -->
+
+        							<div class="tab-pane" id="bestsellers">
+        								<div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="item">
+                                            <div class="item-image-wrapper">
+                                                <figure class="item-image-container">
+                                                    <a href="product.html">
+                                                        <img src="images/products/item9.jpg" alt="item1" class="item-image">
+                                                        <img src="images/products/item9-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                    </a>
+                                                </figure><!-- End .item-image-container -->
+                                                <span class="new-circle top-left">New</span>
+
+                                            </div><!-- End .item-image-wrapper -->
+                                            <div class="item-meta-container">
+                                                <div class="item-meta-inner-container clearfix">
+
+                                                    <div class="item-price-container inline pull-left">
+                                                        <span class="old-price">$99</span>
+                                                        <span class="item-price">$49<span class="sub-price">.99</span></span>
+                                                    </div><!-- End .item-price-container -->
+                                                    <div class="ratings-container pull-right">
+                                                        <div class="ratings">
+                                                            <div class="ratings-result" data-result="70"></div>
+                                                        </div><!-- End .ratings -->
+                                                    </div><!-- End .rating-container -->
+
+                                                </div><!-- End .item-meta-inner-container -->
+                                                
+                                                <h3 class="item-name"><a href="product.html">Phasellus consequat</a></h3>
+                                                <div class="item-action">
+                                                    <a href="#" class="item-add-btn">
+                                                        <span class="icon-cart-text">Add to Cart</span>
+                                                    </a>
+                                                    <div class="item-action-inner">
+                                                        <a href="#" class="icon-button icon-like">Favourite</a>
+                                                        <a href="#" class="icon-button icon-compare">Checkout</a>
+                                                    </div><!-- End .item-action-inner -->
+                                                </div><!-- End .item-action -->
+                                            </div><!-- End .item-meta-container --> 
+                                        </div><!-- End .item -->
+                                    </div><!-- End .col-md-4 -->
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="item">
+                                            <div class="item-image-wrapper">
+                                                <figure class="item-image-container">
+                                                    <a href="product.html">
+                                                        <img src="images/products/item7.jpg" alt="item1" class="item-image">
+                                                        <img src="images/products/item7-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                    </a>
+                                                </figure><!-- End .item-image-container -->
+
+                                            </div><!-- End .item-image-wrapper -->
+                                            <div class="item-meta-container">
+                                                <div class="item-meta-inner-container clearfix">
+
+                                                    <div class="item-price-container inline pull-left">
+                                                        <span class="item-price">$99<span class="sub-price">.99</span></span>
+                                                    </div><!-- End .item-price-container -->
+                                                    <div class="ratings-container pull-right">
+                                                        <div class="ratings">
+                                                            <div class="ratings-result" data-result="90"></div>
+                                                        </div><!-- End .ratings -->
+                                                    </div><!-- End .rating-container -->
+
+                                                </div><!-- End .item-meta-inner-container -->
+                                                
+                                                <h3 class="item-name"><a href="product.html">Phasellus consequat</a></h3>
+                                                <div class="item-action">
+                                                    <a href="#" class="item-add-btn">
+                                                        <span class="icon-cart-text">Add to Cart</span>
+                                                    </a>
+                                                    <div class="item-action-inner">
+                                                        <a href="#" class="icon-button icon-like">Favourite</a>
+                                                        <a href="#" class="icon-button icon-compare">Checkout</a>
+                                                    </div><!-- End .item-action-inner -->
+                                                </div><!-- End .item-action -->
+                                            </div><!-- End .item-meta-container --> 
+                                        </div><!-- End .item -->
+                                    </div><!-- End .col-md-4 -->
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="item">
+                                            <div class="item-image-wrapper">
+                                                <figure class="item-image-container">
+                                                    <a href="product.html">
+                                                        <img src="images/products/item2.jpg" alt="item1" class="item-image">
+                                                        <img src="images/products/item2-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                    </a>
+                                                </figure><!-- End .item-image-container -->
+                                                <span class="new-circle top-left">New</span>
+                                            </div><!-- End .item-image-wrapper -->
+                                            <div class="item-meta-container">
+                                                <div class="item-meta-inner-container clearfix">
+
+                                                    <div class="item-price-container inline pull-left">
+                                                        <span class="item-price">$29</span>
+                                                    </div><!-- End .item-price-container -->
+                                                    <div class="ratings-container pull-right">
+                                                        <div class="ratings">
+                                                            <div class="ratings-result" data-result="80"></div>
+                                                        </div><!-- End .ratings -->
+                                                    </div><!-- End .rating-container -->
+
+                                                </div><!-- End .item-meta-inner-container -->
+                                                
+                                                <h3 class="item-name"><a href="product.html">Phasellus consequat</a></h3>
+                                                <div class="item-action">
+                                                    <a href="#" class="item-add-btn">
+                                                        <span class="icon-cart-text">Add to Cart</span>
+                                                    </a>
+                                                    <div class="item-action-inner">
+                                                        <a href="#" class="icon-button icon-like">Favourite</a>
+                                                        <a href="#" class="icon-button icon-compare">Checkout</a>
+                                                    </div><!-- End .item-action-inner -->
+                                                </div><!-- End .item-action -->
+                                            </div><!-- End .item-meta-container --> 
+                                        </div><!-- End .item -->
+                                    </div><!-- End .col-md-4 -->
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="item">
+                                            <div class="item-image-wrapper">
+                                                <figure class="item-image-container">
+                                                    <a href="product.html">
+                                                        <img src="images/products/item3.jpg" alt="item1" class="item-image">
+                                                        <img src="images/products/item3-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                    </a>
+                                                </figure><!-- End .item-image-container -->
+                                                <span class="discount-circle top-right">-25%</span>
+
+                                            </div><!-- End .item-image-wrapper -->
+                                            <div class="item-meta-container">
+                                                <div class="item-meta-inner-container clearfix">
+
+                                                    <div class="item-price-container inline pull-left">
+                                                        <span class="item-price">$60<span class="sub-price">.99</span></span>
+                                                    </div><!-- End .item-price-container -->
+                                                    <div class="ratings-container pull-right">
+                                                        <div class="ratings">
+                                                            <div class="ratings-result" data-result="95"></div>
+                                                        </div><!-- End .ratings -->
+                                                    </div><!-- End .rating-container -->
+
+                                                </div><!-- End .item-meta-inner-container -->
+                                                
+                                                <h3 class="item-name"><a href="product.html">Phasellus consequat</a></h3>
+                                                <div class="item-action">
+                                                    <a href="#" class="item-add-btn">
+                                                        <span class="icon-cart-text">Add to Cart</span>
+                                                    </a>
+                                                    <div class="item-action-inner">
+                                                        <a href="#" class="icon-button icon-like">Favourite</a>
+                                                        <a href="#" class="icon-button icon-compare">Checkout</a>
+                                                    </div><!-- End .item-action-inner -->
+                                                </div><!-- End .item-action -->
+                                            </div><!-- End .item-meta-container --> 
+                                        </div><!-- End .item -->
+                                    </div><!-- End .col-md-4 -->
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="item">
+                                            <div class="item-image-wrapper">
+                                                <figure class="item-image-container">
+                                                    <a href="product.html">
+                                                        <img src="images/products/item5.jpg" alt="item1" class="item-image">
+                                                        <img src="images/products/item5-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                    </a>
+                                                </figure><!-- End .item-image-container -->
+
+                                            </div><!-- End .item-image-wrapper -->
+                                            <div class="item-meta-container">
+                                                <div class="item-meta-inner-container clearfix">
+
+                                                    <div class="item-price-container inline pull-left">
+                                                        <span class="item-price">$299<span class="sub-price">.99</span></span>
+                                                    </div><!-- End .item-price-container -->
+                                                    <div class="ratings-container pull-right">
+                                                        <div class="ratings">
+                                                            <div class="ratings-result" data-result="66"></div>
+                                                        </div><!-- End .ratings -->
+                                                    </div><!-- End .rating-container -->
+
+                                                </div><!-- End .item-meta-inner-container -->
+                                                
+                                                <h3 class="item-name"><a href="product.html">Phasellus consequat</a></h3>
+                                                <div class="item-action">
+                                                    <a href="#" class="item-add-btn">
+                                                        <span class="icon-cart-text">Add to Cart</span>
+                                                    </a>
+                                                    <div class="item-action-inner">
+                                                        <a href="#" class="icon-button icon-like">Favourite</a>
+                                                        <a href="#" class="icon-button icon-compare">Checkout</a>
+                                                    </div><!-- End .item-action-inner -->
+                                                </div><!-- End .item-action -->
+                                            </div><!-- End .item-meta-container --> 
+                                        </div><!-- End .item -->
+                                    </div><!-- End .col-md-4 -->
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="item">
+                                            <div class="item-image-wrapper">
+                                                <figure class="item-image-container">
+                                                    <a href="product.html">
+                                                        <img src="images/products/item2.jpg" alt="item1" class="item-image">
+                                                        <img src="images/products/item2-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                    </a>
+                                                </figure><!-- End .item-image-container -->
+
+                                            </div><!-- End .item-image-wrapper -->
+                                            <div class="item-meta-container">
+                                                <div class="item-meta-inner-container clearfix">
+
+                                                    <div class="item-price-container inline pull-left">
+                                                        <span class="item-price">$88<span class="sub-price">.99</span></span>
+                                                    </div><!-- End .item-price-container -->
+                                                    <div class="ratings-container pull-right">
+                                                        <div class="ratings">
+                                                            <div class="ratings-result" data-result="46"></div>
+                                                        </div><!-- End .ratings -->
+                                                    </div><!-- End .rating-container -->
+
+                                                </div><!-- End .item-meta-inner-container -->
+                                                
+                                                <h3 class="item-name"><a href="product.html">Phasellus consequat</a></h3>
+                                                <div class="item-action">
+                                                    <a href="#" class="item-add-btn">
+                                                        <span class="icon-cart-text">Add to Cart</span>
+                                                    </a>
+                                                    <div class="item-action-inner">
+                                                        <a href="#" class="icon-button icon-like">Favourite</a>
+                                                        <a href="#" class="icon-button icon-compare">Checkout</a>
+                                                    </div><!-- End .item-action-inner -->
+                                                </div><!-- End .item-action -->
+                                            </div><!-- End .item-meta-container --> 
+                                        </div><!-- End .item -->
+                                    </div><!-- End .col-md-4 -->
+        							</div><!-- End .tab-pane -->
+
+        							<div class="tab-pane" id="special">
+    								<div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="item">
+                                            <div class="item-image-wrapper">
+                                                <figure class="item-image-container">
+                                                    <a href="product.html">
+                                                        <img src="images/products/item4.jpg" alt="item1" class="item-image">
+                                                        <img src="images/products/item4-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                    </a>
+                                                </figure><!-- End .item-image-container -->
+                                                <span class="new-circle top-left">New</span>
+
+                                            </div><!-- End .item-image-wrapper -->
+                                            <div class="item-meta-container">
+                                                <div class="item-meta-inner-container clearfix">
+
+                                                    <div class="item-price-container inline pull-left">
+                                                        <span class="old-price">$99</span>
+                                                        <span class="item-price">$49<span class="sub-price">.99</span></span>
+                                                    </div><!-- End .item-price-container -->
+                                                    <div class="ratings-container pull-right">
+                                                        <div class="ratings">
+                                                            <div class="ratings-result" data-result="70"></div>
+                                                        </div><!-- End .ratings -->
+                                                    </div><!-- End .rating-container -->
+
+                                                </div><!-- End .item-meta-inner-container -->
+                                                
+                                                <h3 class="item-name"><a href="product.html">Phasellus consequat</a></h3>
+                                                <div class="item-action">
+                                                    <a href="#" class="item-add-btn">
+                                                        <span class="icon-cart-text">Add to Cart</span>
+                                                    </a>
+                                                    <div class="item-action-inner">
+                                                        <a href="#" class="icon-button icon-like">Favourite</a>
+                                                        <a href="#" class="icon-button icon-compare">Checkout</a>
+                                                    </div><!-- End .item-action-inner -->
+                                                </div><!-- End .item-action -->
+                                            </div><!-- End .item-meta-container --> 
+                                        </div><!-- End .item -->
+                                    </div><!-- End .col-md-4 -->
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="item">
+                                            <div class="item-image-wrapper">
+                                                <figure class="item-image-container">
+                                                    <a href="product.html">
+                                                        <img src="images/products/item8.jpg" alt="item1" class="item-image">
+                                                        <img src="images/products/item8-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                    </a>
+                                                </figure><!-- End .item-image-container -->
+
+                                            </div><!-- End .item-image-wrapper -->
+                                            <div class="item-meta-container">
+                                                <div class="item-meta-inner-container clearfix">
+
+                                                    <div class="item-price-container inline pull-left">
+                                                        <span class="item-price">$99<span class="sub-price">.99</span></span>
+                                                    </div><!-- End .item-price-container -->
+                                                    <div class="ratings-container pull-right">
+                                                        <div class="ratings">
+                                                            <div class="ratings-result" data-result="90"></div>
+                                                        </div><!-- End .ratings -->
+                                                    </div><!-- End .rating-container -->
+
+                                                </div><!-- End .item-meta-inner-container -->
+                                                
+                                                <h3 class="item-name"><a href="product.html">Phasellus consequat</a></h3>
+                                                <div class="item-action">
+                                                    <a href="#" class="item-add-btn">
+                                                        <span class="icon-cart-text">Add to Cart</span>
+                                                    </a>
+                                                    <div class="item-action-inner">
+                                                        <a href="#" class="icon-button icon-like">Favourite</a>
+                                                        <a href="#" class="icon-button icon-compare">Checkout</a>
+                                                    </div><!-- End .item-action-inner -->
+                                                </div><!-- End .item-action -->
+                                            </div><!-- End .item-meta-container --> 
+                                        </div><!-- End .item -->
+                                    </div><!-- End .col-md-4 -->
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="item">
+                                            <div class="item-image-wrapper">
+                                                <figure class="item-image-container">
+                                                    <a href="product.html">
+                                                        <img src="images/products/item1.jpg" alt="item1" class="item-image">
+                                                        <img src="images/products/item1-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                    </a>
+                                                </figure><!-- End .item-image-container -->
+                                                <span class="new-circle top-left">New</span>
+                                            </div><!-- End .item-image-wrapper -->
+                                            <div class="item-meta-container">
+                                                <div class="item-meta-inner-container clearfix">
+
+                                                    <div class="item-price-container inline pull-left">
+                                                        <span class="item-price">$29</span>
+                                                    </div><!-- End .item-price-container -->
+                                                    <div class="ratings-container pull-right">
+                                                        <div class="ratings">
+                                                            <div class="ratings-result" data-result="80"></div>
+                                                        </div><!-- End .ratings -->
+                                                    </div><!-- End .rating-container -->
+
+                                                </div><!-- End .item-meta-inner-container -->
+                                                
+                                                <h3 class="item-name"><a href="product.html">Phasellus consequat</a></h3>
+                                                <div class="item-action">
+                                                    <a href="#" class="item-add-btn">
+                                                        <span class="icon-cart-text">Add to Cart</span>
+                                                    </a>
+                                                    <div class="item-action-inner">
+                                                        <a href="#" class="icon-button icon-like">Favourite</a>
+                                                        <a href="#" class="icon-button icon-compare">Checkout</a>
+                                                    </div><!-- End .item-action-inner -->
+                                                </div><!-- End .item-action -->
+                                            </div><!-- End .item-meta-container --> 
+                                        </div><!-- End .item -->
+                                    </div><!-- End .col-md-4 -->
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="item">
+                                            <div class="item-image-wrapper">
+                                                <figure class="item-image-container">
+                                                    <a href="product.html">
+                                                        <img src="images/products/item2.jpg" alt="item1" class="item-image">
+                                                        <img src="images/products/item2-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                    </a>
+                                                </figure><!-- End .item-image-container -->
+                                                <span class="discount-circle top-right">-25%</span>
+
+                                            </div><!-- End .item-image-wrapper -->
+                                            <div class="item-meta-container">
+                                                <div class="item-meta-inner-container clearfix">
+
+                                                    <div class="item-price-container inline pull-left">
+                                                        <span class="item-price">$60<span class="sub-price">.99</span></span>
+                                                    </div><!-- End .item-price-container -->
+                                                    <div class="ratings-container pull-right">
+                                                        <div class="ratings">
+                                                            <div class="ratings-result" data-result="95"></div>
+                                                        </div><!-- End .ratings -->
+                                                    </div><!-- End .rating-container -->
+
+                                                </div><!-- End .item-meta-inner-container -->
+                                                
+                                                <h3 class="item-name"><a href="product.html">Phasellus consequat</a></h3>
+                                                <div class="item-action">
+                                                    <a href="#" class="item-add-btn">
+                                                        <span class="icon-cart-text">Add to Cart</span>
+                                                    </a>
+                                                    <div class="item-action-inner">
+                                                        <a href="#" class="icon-button icon-like">Favourite</a>
+                                                        <a href="#" class="icon-button icon-compare">Checkout</a>
+                                                    </div><!-- End .item-action-inner -->
+                                                </div><!-- End .item-action -->
+                                            </div><!-- End .item-meta-container --> 
+                                        </div><!-- End .item -->
+                                    </div><!-- End .col-md-4 -->
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="item">
+                                            <div class="item-image-wrapper">
+                                                <figure class="item-image-container">
+                                                    <a href="product.html">
+                                                        <img src="images/products/item4.jpg" alt="item1" class="item-image">
+                                                        <img src="images/products/item4-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                    </a>
+                                                </figure><!-- End .item-image-container -->
+
+                                            </div><!-- End .item-image-wrapper -->
+                                            <div class="item-meta-container">
+                                                <div class="item-meta-inner-container clearfix">
+
+                                                    <div class="item-price-container inline pull-left">
+                                                        <span class="item-price">$299<span class="sub-price">.99</span></span>
+                                                    </div><!-- End .item-price-container -->
+                                                    <div class="ratings-container pull-right">
+                                                        <div class="ratings">
+                                                            <div class="ratings-result" data-result="66"></div>
+                                                        </div><!-- End .ratings -->
+                                                    </div><!-- End .rating-container -->
+
+                                                </div><!-- End .item-meta-inner-container -->
+                                                
+                                                <h3 class="item-name"><a href="product.html">Phasellus consequat</a></h3>
+                                                <div class="item-action">
+                                                    <a href="#" class="item-add-btn">
+                                                        <span class="icon-cart-text">Add to Cart</span>
+                                                    </a>
+                                                    <div class="item-action-inner">
+                                                        <a href="#" class="icon-button icon-like">Favourite</a>
+                                                        <a href="#" class="icon-button icon-compare">Checkout</a>
+                                                    </div><!-- End .item-action-inner -->
+                                                </div><!-- End .item-action -->
+                                            </div><!-- End .item-meta-container --> 
+                                        </div><!-- End .item -->
+                                    </div><!-- End .col-md-4 -->
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="item">
+                                            <div class="item-image-wrapper">
+                                                <figure class="item-image-container">
+                                                    <a href="product.html">
+                                                        <img src="images/products/item5.jpg" alt="item1" class="item-image">
+                                                        <img src="images/products/item5-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                    </a>
+                                                </figure><!-- End .item-image-container -->
+
+                                            </div><!-- End .item-image-wrapper -->
+                                            <div class="item-meta-container">
+                                                <div class="item-meta-inner-container clearfix">
+
+                                                    <div class="item-price-container inline pull-left">
+                                                        <span class="item-price">$129<span class="sub-price">.99</span></span>
+                                                    </div><!-- End .item-price-container -->
+                                                    <div class="ratings-container pull-right">
+                                                        <div class="ratings">
+                                                            <div class="ratings-result" data-result="46"></div>
+                                                        </div><!-- End .ratings -->
+                                                    </div><!-- End .rating-container -->
+
+                                                </div><!-- End .item-meta-inner-container -->
+                                                
+                                                <h3 class="item-name"><a href="product.html">Phasellus consequat</a></h3>
+                                                <div class="item-action">
+                                                    <a href="#" class="item-add-btn">
+                                                        <span class="icon-cart-text">Add to Cart</span>
+                                                    </a>
+                                                    <div class="item-action-inner">
+                                                        <a href="#" class="icon-button icon-like">Favourite</a>
+                                                        <a href="#" class="icon-button icon-compare">Checkout</a>
+                                                    </div><!-- End .item-action-inner -->
+                                                </div><!-- End .item-action -->
+                                            </div><!-- End .item-meta-container --> 
+                                        </div><!-- End .item -->
+                                    </div><!-- End .col-md-4 -->
+
+        							</div><!-- End .tab-pane -->
+        						</div><!-- End #products-tabs-content -->
+        						
+        						<div class="sm-margin"></div><!-- Space -->
+								<div class="row">
+									<div class="col-md-7 col-sm-7 col-xs-12">
+                                        <header class="content-title">
+                                            <h2 class="title">Welcome to Venedor</h2>
+                                        </header>
+										<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Venedor is a fully responsive Magento theme with advanced admin module. Based on Bootstrap’s 12 column 1200px responsive grid Theme. Great looks on desktops, tablets and mobiles. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Venedor is extremely customizable, easy to use and fully responsive. Suitable for every type of store. Great as a starting point for your custom projects. This theme includes several extensions including ajax price slider that will help you improve your sales. We supply a full help with our products and after purchase support to all our customers. <a href="#">Buy Venedor Theme!</a></p>
+									</div><!-- End .col-md-7 -->
+									<div class="col-md-5 col-sm-5 col-xs-12">
+                                        <div class="sm-margin visible-xs"></div><!-- space -->
+										<img src="images/showcase.png" alt="Showcase Venedor" class="img-responsive">
+									</div><!-- End .col-md-5 -->
+								</div><!-- End .row -->
+        						<div class="xlg-margin"></div><!-- Space -->
+        						
+        						<div class="hot-items carousel-wrapper">
+        							<header class="content-title">
+										<div class="title-bg">
+											<h2 class="title">On Sale</h2>
+										</div><!-- End .title-bg -->
+										<p class="title-desc">Only with us you can get a new model with a discount.</p>
+									</header>
+
+                                <div class="carousel-controls">
+                                    <div id="hot-items-slider-prev" class="carousel-btn carousel-btn-prev">
+                                    </div><!-- End .carousel-prev -->
+                                    <div id="hot-items-slider-next" class="carousel-btn carousel-btn-next carousel-space">
+                                    </div><!-- End .carousel-next -->
+                                </div><!-- End .carousel-controls -->
+        						<div class="hot-items-slider owl-carousel">
+        							<div class="item">
+                                        <div class="item-image-wrapper">
+                                            <figure class="item-image-container">
+                                                <a href="product.html">
+                                                    <img src="images/products/item9.jpg" alt="item1" class="item-image">
+                                                    <img src="images/products/item9-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                </a>
+                                            </figure><!-- End .item-image-container -->
+                                            <span class="new-circle top-left">New</span>
+
+                                        </div><!-- End .item-image-wrapper -->
+                                        <div class="item-meta-container">
+                                            <div class="item-meta-inner-container clearfix">
+
+                                                <div class="item-price-container inline pull-left">
+                                                    <span class="old-price">$99</span>
+                                                    <span class="item-price">$49<span class="sub-price">.99</span></span>
+                                                </div><!-- End .item-price-container -->
+                                                <div class="ratings-container pull-right">
+                                                    <div class="ratings">
+                                                        <div class="ratings-result" data-result="70"></div>
+                                                    </div><!-- End .ratings -->
+                                                </div><!-- End .rating-container -->
+
+                                            </div><!-- End .item-meta-inner-container -->
+                                            
+                                            <h3 class="item-name"><a href="product.html">Phasellus consequat</a></h3>
+                                            <div class="item-action">
+                                                <a href="#" class="item-add-btn">
+                                                    <span class="icon-cart-text">Add to Cart</span>
+                                                </a>
+                                                <div class="item-action-inner">
+                                                    <a href="#" class="icon-button icon-like">Favourite</a>
+                                                    <a href="#" class="icon-button icon-compare">Checkout</a>
+                                                </div><!-- End .item-action-inner -->
+                                            </div><!-- End .item-action -->
+                                        </div><!-- End .item-meta-container --> 
+                                    </div><!-- End .item -->
+
+									<div class="item">
+                                        <div class="item-image-wrapper">
+                                            <figure class="item-image-container">
+                                                <a href="product.html">
+                                                    <img src="images/products/item5.jpg" alt="item1" class="item-image">
+                                                    <img src="images/products/item5-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                </a>
+                                            </figure><!-- End .item-image-container -->
+                                            <span class="new-circle top-left">New</span>
+
+                                        </div><!-- End .item-image-wrapper -->
+                                        <div class="item-meta-container">
+                                            <div class="item-meta-inner-container clearfix">
+
+                                                <div class="item-price-container inline pull-left">
+                                                    <span class="item-price">$49<span class="sub-price">.99</span></span>
+                                                </div><!-- End .item-price-container -->
+                                                <div class="ratings-container pull-right">
+                                                    <div class="ratings">
+                                                        <div class="ratings-result" data-result="10"></div>
+                                                    </div><!-- End .ratings -->
+                                                </div><!-- End .rating-container -->
+
+                                            </div><!-- End .item-meta-inner-container -->
+                                            
+                                            <h3 class="item-name"><a href="product.html">Phasellus consequat</a></h3>
+                                            <div class="item-action">
+                                                <a href="#" class="item-add-btn">
+                                                    <span class="icon-cart-text">Add to Cart</span>
+                                                </a>
+                                                <div class="item-action-inner">
+                                                    <a href="#" class="icon-button icon-like">Favourite</a>
+                                                    <a href="#" class="icon-button icon-compare">Checkout</a>
+                                                </div><!-- End .item-action-inner -->
+                                            </div><!-- End .item-action -->
+                                        </div><!-- End .item-meta-container --> 
+                                    </div><!-- End .item -->
+
+									<div class="item">
+                                        <div class="item-image-wrapper">
+                                            <figure class="item-image-container">
+                                                <a href="product.html">
+                                                    <img src="images/products/item2.jpg" alt="item1" class="item-image">
+                                                    <img src="images/products/item2-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                </a>
+                                            </figure><!-- End .item-image-container -->
+                                            <span class="discount-circle top-left">-20%</span>
+
+                                        </div><!-- End .item-image-wrapper -->
+                                        <div class="item-meta-container">
+                                            <div class="item-meta-inner-container clearfix">
+
+                                                <div class="item-price-container inline pull-left">
+                                                    <span class="old-price">$99</span>
+                                                    <span class="item-price">$49<span class="sub-price">.99</span></span>
+                                                </div><!-- End .item-price-container -->
+                                                <div class="ratings-container pull-right">
+                                                    <div class="ratings">
+                                                        <div class="ratings-result" data-result="70"></div>
+                                                    </div><!-- End .ratings -->
+                                                </div><!-- End .rating-container -->
+
+                                            </div><!-- End .item-meta-inner-container -->
+                                            
+                                            <h3 class="item-name"><a href="product.html">Phasellus consequat</a></h3>
+                                            <div class="item-action">
+                                                <a href="#" class="item-add-btn">
+                                                    <span class="icon-cart-text">Add to Cart</span>
+                                                </a>
+                                                <div class="item-action-inner">
+                                                    <a href="#" class="icon-button icon-like">Favourite</a>
+                                                    <a href="#" class="icon-button icon-compare">Checkout</a>
+                                                </div><!-- End .item-action-inner -->
+                                            </div><!-- End .item-action -->
+                                        </div><!-- End .item-meta-container --> 
+                                    </div><!-- End .item -->
+
+									<div class="item">
+                                        <div class="item-image-wrapper">
+                                            <figure class="item-image-container">
+                                                <a href="product.html">
+                                                    <img src="images/products/item3.jpg" alt="item1" class="item-image">
+                                                    <img src="images/products/item3-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                </a>
+                                            </figure><!-- End .item-image-container -->
+
+                                        </div><!-- End .item-image-wrapper -->
+                                        <div class="item-meta-container">
+                                            <div class="item-meta-inner-container clearfix">
+
+                                                <div class="item-price-container inline pull-left">
+                                                    <span class="item-price">$45<span class="sub-price">.99</span></span>
+                                                </div><!-- End .item-price-container -->
+                                                <div class="ratings-container pull-right">
+                                                    <div class="ratings">
+                                                        <div class="ratings-result" data-result="80"></div>
+                                                    </div><!-- End .ratings -->
+                                                </div><!-- End .rating-container -->
+
+                                            </div><!-- End .item-meta-inner-container -->
+                                            
+                                            <h3 class="item-name"><a href="product.html">Phasellus consequat</a></h3>
+                                            <div class="item-action">
+                                                <a href="#" class="item-add-btn">
+                                                    <span class="icon-cart-text">Add to Cart</span>
+                                                </a>
+                                                <div class="item-action-inner">
+                                                    <a href="#" class="icon-button icon-like">Favourite</a>
+                                                    <a href="#" class="icon-button icon-compare">Checkout</a>
+                                                </div><!-- End .item-action-inner -->
+                                            </div><!-- End .item-action -->
+                                        </div><!-- End .item-meta-container --> 
+                                    </div><!-- End .item -->
+
+                                    <div class="item">
+                                        <div class="item-image-wrapper">
+                                            <figure class="item-image-container">
+                                                <a href="product.html">
+                                                    <img src="images/products/item10.jpg" alt="item1" class="item-image">
+                                                    <img src="images/products/item10-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                </a>
+                                            </figure><!-- End .item-image-container -->
+                                            <span class="new-circle top-left">New</span>
+
+                                        </div><!-- End .item-image-wrapper -->
+                                        <div class="item-meta-container">
+                                            <div class="item-meta-inner-container clearfix">
+
+                                                <div class="item-price-container inline pull-left">
+                                                    <span class="item-price">$150</span>
+                                                </div><!-- End .item-price-container -->
+                                                <div class="ratings-container pull-right">
+                                                    <div class="ratings">
+                                                        <div class="ratings-result" data-result="70"></div>
+                                                    </div><!-- End .ratings -->
+                                                </div><!-- End .rating-container -->
+
+                                            </div><!-- End .item-meta-inner-container -->
+                                            
+                                            <h3 class="item-name"><a href="product.html">Phasellus consequat</a></h3>
+                                            <div class="item-action">
+                                                <a href="#" class="item-add-btn">
+                                                    <span class="icon-cart-text">Add to Cart</span>
+                                                </a>
+                                                <div class="item-action-inner">
+                                                    <a href="#" class="icon-button icon-like">Favourite</a>
+                                                    <a href="#" class="icon-button icon-compare">Checkout</a>
+                                                </div><!-- End .item-action-inner -->
+                                            </div><!-- End .item-action -->
+                                        </div><!-- End .item-meta-container --> 
+                                    </div><!-- End .item -->
+        						</div><!--hot-items-slider -->
+
+        						<div class="lg-margin"></div><!-- Space -->
+        						</div><!-- End .hot-items -->
+        					</div><!-- End .col-md-9 -->
+        					
+        					<div class="col-md-3 col-sm-4 col-xs-12 sidebar">
+        						<div class="widget subscribe">
+        							<h3>BE THE FIRST TO KNOW</h3>
+        							<p> Get all the latest information on Events, Sales and Offers. Sign up for the Venedor store newsletter today.</p>
+									<form action="#" id="subscribe-form">
+										<div class="form-group">
+											<input type="email" class="form-control" id="subscribe-email" placeholder="Enter your email address">
+										</div>
+        								<input type="submit" value="SUBMIT" class="btn btn-custom">
+        							</form>
+        						</div>
+        						<div class="widget testimonials">
+        							<h3>Testimonials</h3>
+        							
+        							<div class="testimonials-slider flexslider sidebarslider">
+        								<ul class="testimonials-list clearfix">
+        									<li>
+        										<div class="testimonial-details">
+												<header>Best Service!</header>
+        										Maecenas semper aliquam massa. Praesent pharetra sem vitae nisi eleifend molestie. Aliquam molestie scelerisque ultricies. Suspendisse potenti. 
+        										</div><!-- End .testimonial-details -->
+        										<figure class="clearfix">
+    											<img src="images/testimonials/anna.jpg" alt="Computer Ceo">
+        											<figcaption>
+        												<a href="#">Anna Retallic</a>
+        												<span>12.05.2013</span>
+        											</figcaption>
+        										</figure>
+        									</li>
+        									<li>
+        										<div class="testimonial-details">
+												<header>Cool Style!</header>
+        										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt iure quisquam necessitatibus fugit! Nisi tempora reiciendis omnis error sapiente ipsam maiores dolorem maxime.
+        										</div><!-- End .testimonial-details -->
+        										<figure class="clearfix">
+        											<img src="images/testimonials/jake.jpg" alt="Computer Ceo">
+        											<figcaption>
+        												<a href="#">Jake Suasoo</a>
+        												<span>17.05.2013</span>
+        											</figcaption>
+        										</figure>
+        									</li>
+        								</ul>
+        							</div><!-- End .testimonials-slider -->
+        						</div><!-- End .widget -->
+        						
+        						
+        						<div class="widget latest-posts">
+        							<h3>Latest News</h3>
+        							
+        							<div class="latest-posts-slider flexslider sidebarslider">
+        								<ul class="latest-posts-list clearfix">
+        									<li>
+        										<a href="single.html">
+                                                    <figure class="latest-posts-media-container">
+                                                        <img class="img-responsive" src="images/blog/post1-small.jpg" alt="lats post">
+                                                    </figure>
+                                                </a>
+        										<h4><a href="single.html">35% Discount on second purchase!</a></h4>
+        										<p>Sed blandit nulla nec nunc ullamcorper tristique. Mauris adipiscing cursus ante ultricies dictum sed lobortis.</p>
+        										<div class="latest-posts-meta-container clearfix">
+        											<div class="pull-left">
+        												<a href="#">Read More...</a>
+        											</div><!-- End .pull-left -->
+        											<div class="pull-right">
+        												12.05.2013
+        											</div><!-- End .pull-right -->
+        										</div><!-- End .latest-posts-meta-container -->
+        									</li>
+        									
+        									<li>
+        										<a href="single.html">
+                                                    <figure class="latest-posts-media-container">
+                                                        <img class="img-responsive" src="images/blog/post2-small.jpg" alt="lats post">
+                                                    </figure>
+                                                </a>
+        										<h4><a href="single.html">Free shipping for regular customers.</a></h4>
+        										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque fuga officia in molestiae easint..</p>
+        										<div class="latest-posts-meta-container clearfix">
+        											<div class="pull-left">
+        												<a href="#">Read More...</a>
+        											</div><!-- End .pull-left -->
+        											<div class="pull-right">
+        												10.05.2013
+        											</div><!-- End .pull-right -->
+        										</div><!-- End .latest-posts-meta-container -->
+        									</li>
+        									
+        									<li>
+        										<a href="single.html">
+                                                    <figure class="latest-posts-media-container">
+                                                        <img class="img-responsive" src="images/blog/post3-small.jpg" alt="lats post">
+                                                    </figure>
+                                                </a>
+        										<h4><a href="#">New jeans on sales!</a></h4>
+        										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque fuga officia in molestiae easint..</p>
+        										<div class="latest-posts-meta-container clearfix">
+        											<div class="pull-left">
+        												<a href="#">Read More...</a>
+        											</div><!-- End .pull-left -->
+        											<div class="pull-right">
+        												8.05.2013
+        											</div><!-- End .pull-right -->
+        										</div><!-- End .latest-posts-meta-container -->
+        									</li>
+        									
+        								</ul>
+        							</div><!-- End .latest-posts-slider -->
+        						</div><!-- End .widget -->
+        						
+        						<div class="widget banner-slider-container">
+        							<div class="banner-slider flexslider">
+        								<ul class="banner-slider-list clearfix">
+        									<li><a href="#"><img src="images/banner1.jpg" alt="Banner 1"></a></li>
+        									<li><a href="#"><img src="images/banner2.jpg" alt="Banner 2"></a></li>
+        									<li><a href="#"><img src="images/banner3.jpg" alt="Banner 3"></a></li>
+        								</ul>
+        							</div>
+        						</div><!-- End .widget -->
+        						
+        					</div><!-- End .col-md-3 -->
+        				</div><!-- End .row -->
+        				
+        				<div id="brand-slider-container" class="carousel-wrapper">
+        					<header class="content-title">
+								<div class="title-bg">
+									<h2 class="title">Manufacturers</h2>
+								</div><!-- End .title-bg -->
+							</header>
+                                <div class="carousel-controls">
+                                    <div id="brand-slider-prev" class="carousel-btn carousel-btn-prev">
+                                    </div><!-- End .carousel-prev -->
+                                    <div id="brand-slider-next" class="carousel-btn carousel-btn-next carousel-space">
+                                    </div><!-- End .carousel-next -->
+                                </div><!-- End .carousel-controllers -->
+                                <div class="sm-margin"></div><!-- space -->
+                                <div class="row">
+                                    <div class="brand-slider owl-carousel">
+                                        <a href="#"><img src="images/brands/brand-logo.png" alt="Brand Logo 1"></a>
+                                        <a href="#"><img src="images/brands/brand-logo.png" alt="Brand Logo 2"></a>
+                                        <a href="#"><img src="images/brands/brand-logo.png" alt="Brand Logo 3"></a>
+                                        <a href="#"><img src="images/brands/brand-logo.png" alt="Brand Logo 4"></a>
+                                        <a href="#"><img src="images/brands/brand-logo.png" alt="Brand Logo 5"></a>
+                                        <a href="#"><img src="images/brands/brand-logo.png" alt="Brand Logo 6"></a>
+                                        <a href="#"><img src="images/brands/brand-logo.png" alt="Brand Logo 7"></a>
+                                        <a href="#"><img src="images/brands/brand-logo.png" alt="Brand Logo 8"></a>
+                                        <a href="#"><img src="images/brands/brand-logo.png" alt="Brand Logo 9"></a>
+                                        <a href="#"><img src="images/brands/brand-logo.png" alt="Brand Logo 10"></a>
+                                        <a href="#"><img src="images/brands/brand-logo.png" alt="Brand Logo 11"></a>
+                                        <a href="#"><img src="images/brands/brand-logo.png" alt="Brand Logo 12"></a>
+                                        <a href="#"><img src="images/brands/brand-logo.png" alt="Brand Logo 13"></a>
+                                        <a href="#"><img src="images/brands/brand-logo.png" alt="Brand Logo 14"></a>
+                                        <a href="#"><img src="images/brands/brand-logo.png" alt="Brand Logo 15"></a>
+                                    </div><!-- End .brand-slider -->
+                                </div><!-- End .row -->
+        				</div><!-- End #brand-slider-container -->
+        				
+        			</div><!-- End .col-md-12 -->
+        		</div><!-- End .row -->
+			</div><!-- End .container -->
+        
+        </section><!-- End #content -->
+        
+        <footer id="footer">
+        	<div id="twitterfeed-container">
+        		<div class="container">
+        			<div class="row">
+        				
+        				<div class="twitterfeed col-md-12">
+        					<div class="twitter-icon"><i class="fa fa-twitter"></i></div><!-- End .twitter-icon -->
+        					<div class="row">
+        						<div class="col-md-10 col-sm-10 col-xs-10 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+        							<div class="twitter_feed flexslider"></div>
+        						</div>
+        					</div>
+        					
+        				</div><!-- End .twiitterfeed .col-md-12 -->
+        				
+        			</div><!-- End .row -->
+    			</div><!-- End .container -->
+        	</div><!-- End #twitterfeed-container -->
+        	<div id="inner-footer">
+        		
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-sm-4 col-xs-12 widget">
+							<h3>MY ACCOUNT</h3>
+							<ul class="links">
+								<li><a href="#">My account</a></li>
+								<li><a href="#">Personal information</a></li>
+								<li><a href="#">Addresses</a></li>
+								<li><a href="#">Discount</a></li>
+								<li><a href="#">Order History</a></li>
+								<li><a href="#">Your Vouchers</a></li>
+							</ul>
+						</div><!-- End .widget -->
+						
+						<div class="col-md-3 col-sm-4 col-xs-12 widget">
+							<h3>INFORMATION</h3>
+							<ul class="links">
+								<li><a href="#">New products</a></li>
+								<li><a href="#">Top sellers</a></li>
+								<li><a href="#">Specials</a></li>
+								<li><a href="#">Manufacturers</a></li>
+								<li><a href="#">Suppliers</a></li>
+								<li><a href="#">Our stores</a></li>
+							</ul>
+						</div><!-- End .widget -->
+						
+						<div class="col-md-3 col-sm-4 col-xs-12 widget">
+							<h3>MY ACCOUNT</h3>
+							
+							<ul class="contact-list">
+								<li><strong>Venedor Ltd</strong></li>
+								<li>United Kingdom</li>
+								<li>Greater London</li>
+								<li>London 02587</li>
+								<li>Oxford Street 48/188</li>
+								<li>Working Days: Mon. - Sun.</li>
+								<li>Working Hours: 9.00AM - 8.00PM</li>
+							</ul>
+						</div><!-- End .widget -->
+						
+						<div class="clearfix visible-sm"></div>
+						
+						<div class="col-md-3 col-sm-12 col-xs-12 widget">
+							<h3>FACEBOOK LIKE BOX</h3>
+							
+							<div class="facebook-likebox">
+								<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fenvato&amp;colorscheme=dark&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false"></iframe>
+							</div>
+							
+							
+						</div><!-- End .widget -->
+					</div><!-- End .row -->
+				</div><!-- End .container -->
+        	
+        	</div><!-- End #inner-footer -->
+        	
+        	<div id="footer-bottom">
+        		<div class="container">
+        			<div class="row">
+        				<div class="col-md-7 col-sm-7 col-xs-12 footer-social-links-container">
+        					<ul class="social-links clearfix">
+        						<li><a href="#" class="social-icon icon-facebook"></a></li>
+        						<li><a href="#" class="social-icon icon-twitter"></a></li>
+        						<li><a href="#" class="social-icon icon-rss"></a></li>
+        						<li><a href="#" class="social-icon icon-delicious"></a></li>
+        						<li><a href="#" class="social-icon icon-linkedin"></a></li>
+        						<li><a href="#" class="social-icon icon-flickr"></a></li>
+        						<li><a href="#" class="social-icon icon-skype"></a></li>
+        						<li><a href="#" class="social-icon icon-email"></a></li>
+        					</ul>
+        				</div><!-- End .col-md-7 -->
+        				
+        				<div class="col-md-5 col-sm-5 col-xs-12 footer-text-container">
+        					<p>&copy; 2014 Powered by Company&trade;. All Rights Reserved.</p>
+        				</div><!-- End .col-md-5 -->
+        			</div><!-- End .row -->
+				</div><!-- End .container -->
+        	</div><!-- End #footer-bottom -->
+        	
+        </footer><!-- End #footer -->
+    </div><!-- End #wrapper -->
+    
+    <a href="#" id="scroll-top" title="Scroll to Top"><i class="fa fa-angle-up"></i></a><!-- End #scroll-top -->
+    
+	<!-- END -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+	<script src="js/jquery.debouncedresize.js"></script>
+    <script src="js/retina.min.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+    <script src="js/jquery.hoverIntent.min.js"></script>
+    <script src="js/twitter/jquery.tweet.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jflickrfeed.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/main.js"></script>
+	
+    <script>
+        $(function() {
+
+            // BxSlider.js Slider Plugin
+             $('.bxslider').bxSlider({
+                speed: 1000,
+                auto: true,
+                pause: 6000,
+                prevText : '',
+                nextText : ''
+             });
+             
+             $(window).on('load resize', function() {
+                var windowWidth = $(window).width(),
+                    bxSliderWidth = $('#bxslider').width(),
+                    bxSliderHeight = $('#bxslider').height(),
+                    shadowWidth = (windowWidth - bxSliderWidth) / 2 ;
                     
-                    <h3 class="faq-title">Q : Customization..</h3>
-                    <p>A : We do not provide customization. But we try to help you as much as we can.</p>
-                    <hr>
-                    <h3 class="faq-title">Q : Wordpress - Style.css missing error..</h3>
-                    <p>A : This is not a wordpress theme. This is a 'Html template'! You can not upload this file to wordpress and expect it to work as it is. It will not work.</p>
-                    <hr>
-                    <h3 class="faq-title">Q : How to change layout to boxed?</h3>
-                    <p>A : To change layout to boxed, you need add the element, which has id wrapper,
-                        boxed class. If you want don't want to vertical space at boxed version just change class name to boxed-long. You have to find wrapper element in all html files and class name manually.
-                        </p>
-                        <img src="images/boxed.jpg" alt="boxed">
-                        <br>
-                        <p>Or you can use this code. Simple as that.</p>
-                        <pre>
-                        $('#wrapper').addClass('boxed'); // Just copy this line to the main.js file
-
-                        or
-
-                        $('#wrapper').addClass('boxed-long'); // Just copy this line to the main.js file
-                        </pre>
+                    $('.left-side-shadow, .right-side-shadow').css({'width': shadowWidth, 'height': bxSliderHeight});
                     
-                     <hr>
-                    <h3 class="faq-title">Q : How to change background color or add a pattern?</h3>
-                    <p>A : To add pattern to your background or to change background color. You need to use one of the boxed layouts. Open css folder and find style.css file. If you want to change background colour. Find body element than change backgrond-color.</p>
-                    <p>To add pattern. You change open html files and add pre-defined classes ( patter1-pattern30 ) to the body element. Or you can open style.css file and copy pattern classes' background to the body's background.</p>
-                    <img src="images/bg.jpg" alt="bg">
-                    <br>
-                    <p>Or you can use these codes to change backgrounds. Open main.js file and use these codes below.</p>
-                    <br>
-                        <pre>
-                           // background color
-                            $('body').css('background-color', 'YOUR_COLOR_HERE'); // Just change YOUR_COLOR_HERE with any color - green, yellow,white or color code #fff, rgba(255, 255, 255) -- like so.
-
-                        or
-                            /* You can coose classes from pattern1 to pattern30, There are predefined 30 classes for pattern background */
-                            $('body').addClass('pattern10'); // Copy this code to main.js file
-                        </pre>
-
-                    <hr>
-                    <h3>Q: How to change product zoom type?</h3>
-                    <p>A: open main.js file. find productZoomImage function. Check out the example image below.</p>
-                        <img src="images/zoom.jpg" alt="bg">
-                    
-                </div>
-                <hr class="sections"></hr>
-
-                <footer id="footer" class="text-center">
-                    <p>Once again, thank you for purchasing our Venedor Template. If you have a problem, we'd be glad to help you. Visit our forum and share your problems and opinions with us. <br>All rights-reserved &copy; - 2014</p>
-                </footer>
-                <!-- end -->
-            </div>
-            </div>  
-        </section>
-        <script>
-            $(function() {
-                // Menu
-                $('#menu').find('a').on('click', function(e) {
-                    var $this = $(this),
-                        targetSec = $(this).attr('href'),
-                        jtarget = $(targetSec);
-                
-                    if( $this.hasClass('open')) {
-                        $this.siblings('ul').slideToggle(400);
-                    } else {
-                        var topDistancejtarget = jtarget.offset().top;
-                        $('html, body').animate({'scrollTop': (topDistancejtarget - 40)}, 600);
-                    }
-
-                    e.preventDefault();
-                });
-
-            });
-        </script>
+             });
+        
+        });
+    </script>
     </body>
 </html>
-
-
